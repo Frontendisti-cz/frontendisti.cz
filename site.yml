@@ -1,0 +1,16 @@
+url:
+    canonical: frontendisti.cz
+    extra: [www.frontendisti.cz]
+
+locale: cs_CZ
+
+router:
+    index: /
+    archive: /archiv-akci
+
+data:
+    archive: archive.yml
+
+renderer:
+    index: index.html.twig
+    archive: archive.html.twig

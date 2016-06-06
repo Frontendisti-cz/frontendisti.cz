@@ -1,0 +1,13 @@
+{
+  "name": "frontendisti.cz",
+  "description": "Frontendisti.cz",
+  "homepage": "http://frontendisti.cz",
+  "authors": [
+    "http://www.visionapps.cz"
+  ],
+  "license": "unlicensed",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
