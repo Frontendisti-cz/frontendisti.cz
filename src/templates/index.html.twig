@@ -1,7 +1,22 @@
 {% extends '_layouts/base.html.twig' %}
 
 {% block sublayout %}
-    {#cover#}
+    <div class="container--fluid cover">
+        <div class="offset--bottom--large">{{ data.cover.intro|raw }}</div>
+        <h1>{{ data.cover.title|raw }}</h1>
+        <h2 class="offset--bottom--larger">{{ data.cover.subtitle|striptags|raw }}</h2>
+        <div class="social offset--bottom">
+            <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
+                <img src="{{ asset('images/hollow-cut-facebook.svg') }}" alt="Frontendisti na Facebooku">
+            </a>
+            <a href="https://www.twitter.com/frontendisti/" target="_blank" class="social__icon">
+                <img src="{{ asset('images/hollow-cut-twitter.svg') }}" alt="@Frontendisti na Twitteru">
+            </a>
+            <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" target="_blank" class="social__icon">
+                <img src="{{ asset('images/hollow-cut-youtube.svg') }}" alt="Frontendisti na Youtube">
+            </a>
+        </div>
+    </div>
     {#video#}
     {#links#}
     {#people#}

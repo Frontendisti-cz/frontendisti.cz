@@ -9,7 +9,9 @@ router:
     archive: /archiv-akci
 
 data:
-    archive: archive.yml
+    cover: cover.yml
+    events: events.yml
+    team: team.yml
 
 renderer:
     index: index.html.twig
