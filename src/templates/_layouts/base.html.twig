@@ -36,13 +36,15 @@
 
 
 </head>
-<body{% if bodyClass is defined %} class="{{ bodyClass }}"{% endif %}>
+<body class="site">
 
 <header role="banner" class="header">
     {% include '_partials/header.html.twig' %}
 </header>
 
-{% block sublayout %}{% endblock %}
+<main role="main" class="main site__content">
+    {% block sublayout %}{% endblock %}
+</main>
 
 <footer role="contentinfo" class="footer">
     {% include '_partials/footer.html.twig' %}

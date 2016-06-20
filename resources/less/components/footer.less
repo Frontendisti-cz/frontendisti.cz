@@ -1,0 +1,30 @@
+.footer {
+    background-color: @brand-grey;
+    text-align: center;
+    padding: 4% 0;
+
+    &__wr__section {
+        padding: 2% 6%;
+    }
+
+    @media (min-width: @screen-desktop) {
+        &__wr {
+            display: flex;
+            text-align: left;
+
+            &__section {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 50%;
+                float: left;
+
+                &--right {
+                    justify-content: flex-start;
+                    margin-left: -1px;
+                    border-left: 1px solid @brand-grey-dark;
+                }
+            }
+        }
+    }
+}
