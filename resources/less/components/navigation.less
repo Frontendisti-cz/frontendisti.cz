@@ -1,0 +1,20 @@
+.navigation {
+    display: block;
+    text-align: right;
+    height: 40px;
+
+    &__link {
+        position: relative;
+        font-weight: bold;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border-bottom: none;
+        color: fade(#000, 60%);
+
+        &:hover,
+        &:active,
+        &.active {
+            color: #000;
+        }
+    }
+}

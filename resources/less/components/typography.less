@@ -1,0 +1,60 @@
+html {
+    font-size: 16px;
+
+    @media (min-width: @screen-tablet) {
+        font-size: 20px;
+    }
+}
+
+body {
+    font: 300 1em/1.8 'Playfair Display', helvetica, roboto, arial, sans-serif;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1.2;
+
+    @media (min-width: @screen-tablet) {
+        font-size: 2.2em;
+    }
+}
+
+h2 {
+    margin-bottom: .5em;
+    font-size: 1.375rem;
+
+    @media (min-width: @screen-desktop) {
+        font-size: 1.5rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dotted fade(#000, 75%);
+    transition: all 150ms linear;
+
+    &:hover,
+    &:focus {
+        border-bottom-color: #000;
+    }
+}
+
+p {
+    margin: 0 0 1em;
+}
+

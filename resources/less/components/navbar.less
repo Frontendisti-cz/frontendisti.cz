@@ -1,0 +1,24 @@
+.navbar {
+    height: @navbar-height;
+    width: 100%;
+    background-color: #fff;
+
+    &__inner {
+        height: 100%;
+
+        &__section {
+            float: left;
+            width: 50%;
+
+            &--right {
+                float: right;
+            }
+        }
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
