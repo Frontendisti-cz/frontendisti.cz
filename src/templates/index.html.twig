@@ -1,7 +1,7 @@
 {% extends '_layouts/base.html.twig' %}
 
 {% block sublayout %}
-    <div class="container--fluid cover">
+    <div class="container--fluid cover offset--bottom--large">
         <div class="offset--bottom--large">{{ data.cover.intro|raw }}</div>
         <h1>{{ data.cover.title|raw }}</h1>
         <h2 class="offset--bottom--larger">{{ data.cover.subtitle|striptags|raw }}</h2>
@@ -17,15 +17,127 @@
             </a>
         </div>
     </div>
-    {#video#}
+    {% set lastvideo = false %}
+    {% for event in data.events|reverse %}
+        {% if event.speakers[0].youtube_id|length > 0 and lastvideo == false %}
+            {% set lastvideo = true %}
+            <div class="container">
+                <h2 class="offset--bottom">{{ event.title|striptags|trim }}</h2>
+                <div class="offset--bottom">
+                    {{ event.description|raw }}
+                </div>
+            </div>
+            <div class="container container--xs-fluid">
+                <div class="grid grid--center offset--bottom">
+                    {% for speaker in event.speakers %}
+                        {% set columns = '' %}
+                        {% if loop.length == 4 %}
+                            {% set columns = 'grid__item--quarter' %}
+                        {% endif %}
+                        <div class="grid__item {{ columns }}">
+                            <div class="box offset--bottom">
+                                <div class="box__video">
+                                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/{{ speaker.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="grid grid--center offset--bottom--larger">
+                    <div class="grid__item">
+                        <div class="box offset--bottom">
+                            <div class="box__text">
+                                <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" class="btn btn--icon btn--icon--youtube">Frontendisti na YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
     <div class="container">
-        <div class="grid">
+        <div class="grid offset--bottom--larger">
             <div class="grid__item">
-
+                <div class="box offset--bottom">
+                    <div class="box__illustration">
+                        <img src="{{ asset('images/box-group.svg') }}" height="80" alt="" class="box__icon" />
+                    </div>
+                    <div class="box__text">
+                        <h2 class="h3 box__title offset--bottom--large">
+                            Nenechte si ujít<br />
+                            další sraz!
+                        </h2>
+                        <a href="http://srazy.info/frontendisti/" class="btn btn--icon btn--icon--srazy">Frontendisti na Srazy.info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="box offset--bottom">
+                    <div class="box__illustration">
+                        <img src="{{ asset('images/box-chat.svg') }}" height="80" alt="" class="box__icon" />
+                    </div>
+                    <div class="box__text">
+                        <h2 class="h3 box__title offset--bottom--large">
+                            Pojďte diskutovat<br />
+                            o webovém frontendu!
+                        </h2>
+                        <a href="https://www.facebook.com/frontendisti/" class="btn btn--icon btn--icon--facebook">Frontendisti Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="box offset--bottom">
+                    <div class="box__illustration">
+                        <img src="{{ asset('images/box-job.svg') }}" height="80" alt="" class="box__icon" />
+                    </div>
+                    <div class="box__text">
+                        <h2 class="h3 box__title offset--bottom--large">
+                            Hledáte nebo nabízíte práci<br />
+                            v oboru webového frontendu?
+                        </h2>
+                        <a href="https://www.facebook.com/groups/frontendistiprace/" class="btn btn--icon btn--icon--facebook">Frontend práce na Facebooku</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    {#links#}
-    {#people#}
-    {#contact#}
+    {% if data.team|length > 0 %}
+        <div class="container u__text--center">
+            <h2 class="offset--bottom">Organizační štáb</h2>
+            <div class="grid grid--center offset--bottom--larger">
+                {% for member in data.team %}
+                    <div class="grid__item">
+                        <div class="box offset--bottom--large">
+                            <div class="box__illustration">
+                                <img src="{{ image('images/people/' ~ member.image).cropResize(400) }}" alt="{{ member.name }}" class="box__image box__image--round" />
+                            </div>
+                            <div class="box__text">
+                                <h3 class="box__title">
+                                    <strong>{{ member.name|striptags|trim }}</strong>
+                                </h3>
+                                {% if member.position|length > 0 %}
+                                    <div class="u__text--small">
+                                        {{ member.position|raw }}
+                                    </div>
+                                {% endif %}
+                                {% if member.email|length > 0 %}
+                                    <div class="u__text--smaller">
+                                        E:&nbsp;<a href="mailto:{{ member.email|striptags|trim }}" target="_blank">{{ member.email|striptags|trim }}</a>
+                                    </div>
+                                {% endif %}
+                                {% if member.twitter|length > 0 %}
+                                    <div class="u__text--smaller">
+                                        <a href="https://twitter.com/{{ member.twitter|striptags|trim }}" target="_blank">@{{ member.twitter|striptags|trim }}</a>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="grid__item grid__item--wide">
+                    <p>Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinovi Michálkovi na <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a></p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}

@@ -1,9 +1,84 @@
 {% extends '_layouts/base.html.twig' %}
 
 {% block sublayout %}
-    {#event#}
-        {#info#}
-        {#people#}
-        {#links#}
-        {#partners#}
+    <div class="container">
+        <h1 class="offset--bottom">Archiv akcí</h1>
+    </div>
+    {% for event in data.events|reverse %}
+        <div class="event">
+            <div class="container offset--bottom--large">
+                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" name="{{ event.slug|striptags|trim }}" class="u__clear-link">{{ event.title|striptags|trim }}</a></h2>
+                <div class="offset--bottom--large">
+                    {{ event.description|raw }}
+                </div>
+                <div class="grid grid--center offset--bottom--larger u__text--center">
+                    {% for speaker in event.speakers %}
+                        {% set columns = '' %}
+                        {% if loop.length == 4 %}
+                            {% set columns = 'grid__item--quarter' %}
+                        {% endif %}
+                        <div class="grid__item {{ columns }}">
+                            <div class="box offset--bottom--large">
+                                <div class="box__illustration">
+                                    <img src="{{ image('images/people/' ~ speaker.image).cropResize(400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
+                                </div>
+                                <div class="box__text">
+                                    <h3 class="box__title">
+                                        <strong>
+                                            {% if speaker.name_link|length > 0 %}
+                                                <a href="{{ speaker.name_link }}" target="_blank">{{ speaker.name|striptags|trim }}</a>
+                                            {% else %}
+                                                {{ speaker.name|striptags|trim }}
+                                            {% endif %}
+                                        </strong>
+                                        {% if speaker.company|length > 0 %}
+                                            {% if speaker.company_link|length > 0 %}
+                                                <a href="{{ speaker.company_link }}" target="_blank" class="u__clear-link">@&nbsp;{{ speaker.company|striptags|trim }}</a>
+                                            {% else %}
+                                                @&nbsp;{{ speaker.company|striptags|trim }}
+                                            {% endif %}
+                                        {% endif %}
+                                    </h3>
+                                    {% if speaker.title|length > 0 %}
+                                        <h4 class="box__subtitle">{{ speaker.title|raw }}</h4>
+                                    {% endif %}
+                                    {% if speaker.youtube_id|length > 0 %}
+                                        <div class="u__text--smaller">
+                                            <a href="https://youtu.be/{{ speaker.youtube_id|striptags|trim }}" target="_blank">Video z přednášky</a>
+                                        </div>
+                                    {% endif %}
+                                    {% if speaker.presentation|length > 0 %}
+                                        <div class="u__text--smaller">
+                                            <a href="{{ speaker.presentation|striptags|trim }}" target="_blank">Prezentace</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    {% if event.more_links|length > 0 %}
+                        <div class="grid__item grid__item--wide">
+                            {% for link in event.more_links %}
+                                <div class="u__text--smaller">
+                                    <a href="{{ link.url|striptags|trim }}" target="_blank">{{ link.title }}</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% if event.partners|length > 0 %}
+                        <div class="grid__item grid__item--all offset--top offset--bottom--small">
+                            {{ event.partners_title|striptags|trim }}
+                        </div>
+                        {% for partner in event.partners %}
+                            <div class="grid__item grid__item--quarter grid__item--center">
+                                <a href="{{ partner.url }}" target="_blank" title="{{ partner.title }}" class="u__clear-link">
+                                    <img src="{{ image('images/partners/' ~ partner.image).cropResize(200) }}" alt="{{ partner.title }}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
