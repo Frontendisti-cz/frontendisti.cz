@@ -1,0 +1,14 @@
+-   id: 1
+    name: Martin Michálek
+    image: martin-michalek.jpg
+    position: >
+        Vedení, komunikace, sponzoři
+    email: martin@vzhurudolu.cz
+    twitter: machal
+-   id: 2
+    name: Tomáš Hejč
+    image: tomas-hejc.jpg
+    position: >
+        organizace brněnských akcí
+    email: tomas.hejc@superkoderi.cz
+    twitter: TaCcz
