@@ -2,10 +2,21 @@
     .clearfix();
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 8%;
+    padding: 0 4%;
 
     &--fluid {
         max-width: none;
         padding: 0 4%;
+    }
+
+    @media (max-width: ((@screen-phablet) - 1)) {
+        &--xs-fluid {
+            max-width: none;
+            padding: 0;
+        }
+    }
+
+    @media (min-width: (@screen-tablet)) {
+        padding: 0 8%;
     }
 }

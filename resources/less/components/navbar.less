@@ -2,6 +2,7 @@
     height: @navbar-height;
     width: 100%;
     background-color: #fff;
+    z-index: 9999;
 
     &__inner {
         height: 100%;
@@ -20,5 +21,9 @@
         position: fixed;
         top: 0;
         left: 0;
+    }
+
+    @media (min-width: @screen-tablet) {
+        height: @navbar-height-desktop;
     }
 }

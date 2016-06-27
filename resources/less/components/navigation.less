@@ -1,13 +1,12 @@
 .navigation {
     display: block;
     text-align: right;
-    height: 40px;
 
     &__link {
         position: relative;
         font-weight: bold;
         display: inline-block;
-        padding: 1.5rem 2rem;
+        padding: 1.6rem 1rem;
         border-bottom: none;
         color: fade(#000, 60%);
 
@@ -16,5 +15,11 @@
         &.active {
             color: #000;
         }
+
+        @media (min-width: @screen-tablet) {
+            padding: 1.5rem 2rem;
+        }
     }
+
+
 }
