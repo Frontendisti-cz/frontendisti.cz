@@ -2,23 +2,9 @@
 
 module.exports = {
 
-  'test-js': [
-    'jshint',
-    'jscs',
-  ],
-
-  test: [
-    'test-js',
-  ],
-
   'build-css': [
     'less',
     'postcss',
-  ],
-
-  'build-js': [
-    'concat',
-    'uglify',
   ],
 
   'build-images': [
@@ -29,7 +15,6 @@ module.exports = {
   build: [
     'clean',
     'build-css',
-    'build-js',
     'build-images',
     'copy',
   ],
