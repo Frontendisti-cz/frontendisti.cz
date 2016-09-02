@@ -1,5 +1,9 @@
 {% extends '_layouts/base.html.twig' %}
 
+{% block title %}Archiv akcí | Frontendisti.cz{% endblock %}
+
+{% block description %}Archiv minikonferencí webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.{% endblock %}
+
 {% block sublayout %}
     <div class="container">
         <h1 class="offset--bottom">Archiv akcí</h1>
@@ -7,7 +11,7 @@
     {% for event in data.events|reverse %}
         <div class="event">
             <div class="container offset--bottom--large">
-                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" name="{{ event.slug|striptags|trim }}" class="u__clear-link">{{ event.title|striptags|trim }}</a></h2>
+                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" id="{{ event.slug|striptags|trim }}" class="u__clear-link">{{ event.title|striptags|trim }}</a></h2>
                 <div class="offset--bottom--large">
                     {{ event.description|raw }}
                 </div>
@@ -19,9 +23,11 @@
                         {% endif %}
                         <div class="grid__item {{ columns }}">
                             <div class="box offset--bottom--large">
-                                <div class="box__illustration">
-                                    <img src="{{ image('images/people/' ~ speaker.image).cropResize(400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
-                                </div>
+                                {% if speaker.image|length > 0 %}
+                                    <div class="box__illustration">
+                                        <img src="{{ image('images/people/' ~ speaker.image).cropResize(400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
+                                    </div>
+                                {% endif %}
                                 <div class="box__text">
                                     <h3 class="box__title">
                                         <strong>

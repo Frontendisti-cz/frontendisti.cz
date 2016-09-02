@@ -13,6 +13,9 @@ data:
     events: events.yml
     team: team.yml
 
+tracking:
+    google_analytics: UA-51816675-1
+
 renderer:
     index: index.html.twig
     archive: archive.html.twig
