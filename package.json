@@ -6,6 +6,9 @@
     "url": "git@bitbucket.visionapps.cz:7999/mcsp/jobs.visionapps.cz.git"
   },
   "license": "unlicensed",
+  "scripts": {
+    "test": "grunt build"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "cssnano": "^3.3.1",
