@@ -1,7 +1,7 @@
 # [Frontendisti.cz](http://frontendisti.cz)
 
-[![devDependency Status](https://david-dm.org/frontendisti-cz/frontendisti.cz/dev-status.svg)](https://david-dm.org/frontendisti-cz/frontendisti.cz#info=devDependencies)
-[![Build Status](https://travis-ci.org/frontendisti-cz/frontendisti.cz.svg?branch=master)](https://travis-ci.org/frontendisti-cz/frontendisti.cz)
+[![devDependency Status](https://david-dm.org/Frontendisti-cz/frontendisti.cz/dev-status.svg)](https://david-dm.org/Frontendisti-cz/frontendisti.cz#info=devDependencies)
+[![Build Status](https://travis-ci.org/Frontendisti-cz/frontendisti.cz.svg?branch=master)](https://travis-ci.org/Frontendisti-cz/frontendisti.cz)
 
 Official web site of Czech front-end community.
 
