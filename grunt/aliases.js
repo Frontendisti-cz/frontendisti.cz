@@ -20,14 +20,12 @@ module.exports = {
   ],
 
   dev: [
-    'test',
     'build',
     'browserSync',
     'watch',
   ],
 
   default: [
-    'test',
     'build',
   ],
 
