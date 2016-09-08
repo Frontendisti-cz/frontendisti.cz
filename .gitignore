@@ -10,4 +10,5 @@
 /web/fonts/*
 /web/js/*
 /web/images/*
+/web/image_cache/*
 /web/vendor/*
