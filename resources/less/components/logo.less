@@ -1,15 +1,10 @@
 .logo {
-    position: relative;
-    top: -2px;
     display: block;
-    height: 30px;
-    margin: 1.75rem 0;
+    height: 1rem * @line-height;
+    margin: (1rem * @line-height) 0;
 
-    > img {
+    &__image {
         max-width: 100%;
-    }
-
-    @media (min-width: @screen-tablet) {
-        position: static;
+        height: 1rem * @line-height;
     }
 }

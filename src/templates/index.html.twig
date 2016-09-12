@@ -2,50 +2,52 @@
 
 {% block sublayout %}
     <!-- Introduction -->
-    <div class="container--fluid cover offset--bottom--large">
+    <div class="cover offset--bottom--large">
+        <div class="container">
 
-        <div class="text--accent offset--bottom">
-            <strong>{{ data.cover.intro|raw }}</strong>
+            <div class="text--accent offset--bottom">
+                <strong>{{ data.cover.intro|raw }}</strong>
+            </div>
+
+            <h1>{{ data.cover.title|raw }}</h1>
+            <h2>{{ data.cover.subtitle|striptags|raw }}</h2>
+
+            <!-- Sign up -->
+            {% if data.cover.url %}
+                <p>
+                    <a href="{{ data.cover.url|trim }}" class="button" target="_blank">Přihlásit se</a>
+                </p>
+            {% endif %}
+
+            <!-- Sharing -->
+            <div class="offset--top--large">
+                <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
+                    <img
+                        src="{{ asset('images/round-facebook.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="Frontendisti na Facebooku"
+                    />
+                </a>
+                <a href="https://www.twitter.com/frontendisti/" target="_blank" class="social__icon">
+                    <img
+                        src="{{ asset('images/round-twitter.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="@Frontendisti na Twitteru"
+                    />
+                </a>
+                <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" target="_blank" class="social__icon">
+                    <img
+                        src="{{ asset('images/round-youtube.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="Frontendisti na YouTube"
+                    />
+                </a>
+            </div>
+
         </div>
-
-        <h1>{{ data.cover.title|raw }}</h1>
-        <h2>{{ data.cover.subtitle|striptags|raw }}</h2>
-
-        <!-- Sign up -->
-        {% if data.cover.url %}
-            <p>
-                <a href="{{ data.cover.url|trim }}" class="btn" target="_blank">Přihlásit se</a>
-            </p>
-        {% endif %}
-
-        <!-- Sharing -->
-        <div class="offset--top--large">
-            <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
-                <img
-                    src="{{ asset('images/round-facebook.svg') }}"
-                    width="40"
-                    height="40"
-                    alt="Frontendisti na Facebooku"
-                />
-            </a>
-            <a href="https://www.twitter.com/frontendisti/" target="_blank" class="social__icon">
-                <img
-                    src="{{ asset('images/round-twitter.svg') }}"
-                    width="40"
-                    height="40"
-                    alt="@Frontendisti na Twitteru"
-                />
-            </a>
-            <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" target="_blank" class="social__icon">
-                <img
-                    src="{{ asset('images/round-youtube.svg') }}"
-                    width="40"
-                    height="40"
-                    alt="Frontendisti na YouTube"
-                />
-            </a>
-        </div>
-
     </div>
 
     <!-- Recent Event -->

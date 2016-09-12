@@ -5,7 +5,8 @@
 @gray-darker: #2b2b2b;
 @gray-dark: #444;
 @gray: #555;
-@gray-light: #e6e6e6;
+@gray-light: #999;
+@gray-lighter: #e6e6e6;
 
 @brand-blue: #16263b;
 @brand-orange: #ff9900;
@@ -41,6 +42,8 @@
 @font-size-small: 1rem / @modular-scale-ratio;
 @font-size-smaller: 1rem / @modular-scale-ratio - 1;
 
+@text-color: @brand-gray;
+
 // Components
 // ==========
 
@@ -52,5 +55,9 @@
 @cover-tile-color-dark: darken(@cover-tile-color, 6%);
 
 // Navbar
-@navbar-height: 80px;
-@navbar-height-desktop: 100px;
+@navbar-height: 3rem * @line-height;
+
+// Navigation
+@navigation-link-color: @gray-light;
+@navigation-link-color-hover: @brand-gray;
+@navigation-link-color-active: @brand-accent;
