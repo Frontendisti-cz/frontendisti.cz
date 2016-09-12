@@ -1,10 +1,18 @@
+// Common Settings
+// ===============
+
 // Colours
-@brand-primary: #ff9900;
-@brand-primary-darker: darken(@brand-primary, 3%);
-@brand-alt: #16263b;
-@brand-alt-dark: darken(@brand-alt, 20%);
-@brand-grey: #E6E6E6;
-@brand-grey-dark: darken(@brand-grey, 20%);
+@gray-darker: #2b2b2b;
+@gray-dark: #444;
+@gray: #555;
+@gray-light: #e6e6e6;
+
+@brand-blue: #16263b;
+@brand-orange: #ff9900;
+@brand-gray: @gray-darker;
+
+@brand-primary: @brand-blue;
+@brand-accent: @brand-orange;
 
 // Layout
 @screen-phablet: 570px;
@@ -12,9 +20,20 @@
 @screen-desktop: 1024px;
 @screen-large: 1400px;
 
-// Misc
-@navbar-height: 80px;
-@navbar-height-desktop: 100px;
-
+// Typography
 @font-size: 16px;
 @font-size-desktop: 20px;
+
+// Components
+// ==========
+
+// Cover
+@cover-tile-projected-width: 45px;
+@cover-tile-projected-height: @cover-tile-projected-width * 1.75;
+@cover-tile-color: @brand-blue;
+@cover-tile-color-light: lighten(@cover-tile-color, 6%);
+@cover-tile-color-dark: darken(@cover-tile-color, 6%);
+
+// Navbar
+@navbar-height: 80px;
+@navbar-height-desktop: 100px;

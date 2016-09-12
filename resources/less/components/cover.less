@@ -1,5 +1,22 @@
+// Gradient source: http://lea.verou.me/css3patterns/#japanese-cube
 .cover {
-    background-color: @brand-grey;
-    padding: 8% 12% 2%;
+    padding: 12% 12% 6%;
     text-align: center;
+    color: #fff;
+    background-color: @cover-tile-color;
+    background-image:
+        linear-gradient(30deg, @cover-tile-color-dark 12%, transparent 12.5%, transparent 87%, @cover-tile-color-dark 87.5%, @cover-tile-color-dark),
+        linear-gradient(150deg, @cover-tile-color-dark 12%, transparent 12.5%, transparent 87%, @cover-tile-color-dark 87.5%, @cover-tile-color-dark),
+        linear-gradient(30deg, @cover-tile-color-dark 12%, transparent 12.5%, transparent 87%, @cover-tile-color-dark 87.5%, @cover-tile-color-dark),
+        linear-gradient(150deg, @cover-tile-color-dark 12%, transparent 12.5%, transparent 87%, @cover-tile-color-dark 87.5%, @cover-tile-color-dark),
+        linear-gradient(60deg, @cover-tile-color-light 25%, transparent 25.5%, transparent 75%, @cover-tile-color-light 75%, @cover-tile-color-light),
+        linear-gradient(60deg, @cover-tile-color-light 25%, transparent 25.5%, transparent 75%, @cover-tile-color-light 75%, @cover-tile-color-light);
+    background-size: (2 * @cover-tile-projected-width) (2 * @cover-tile-projected-height);
+    background-position:
+        0 0,
+        0 0,
+        @cover-tile-projected-width @cover-tile-projected-height,
+        @cover-tile-projected-width @cover-tile-projected-height,
+        0 0,
+        @cover-tile-projected-width @cover-tile-projected-height;
 }
