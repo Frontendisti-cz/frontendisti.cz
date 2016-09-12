@@ -5,19 +5,15 @@
 
     &__link {
         position: relative;
-        font-weight: bold;
         display: inline-block;
         padding: ((@navbar-height - @line-height) / 2) 1rem;
-        border-bottom: none;
+        font-weight: bold;
         color: @navigation-link-color;
+        border-bottom: none;
 
         &:hover,
         &:focus {
             color: @navigation-link-color-hover;
-        }
-
-        &--active {
-            color: @navigation-link-color-active;
         }
     }
 }

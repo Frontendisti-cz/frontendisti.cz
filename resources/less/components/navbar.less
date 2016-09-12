@@ -1,12 +1,9 @@
 .navbar {
-    height: @navbar-height;
     width: 100%;
-    z-index: 9999;
+    height: @navbar-height;
     background-color: #fff;
 
     &__inner {
-        height: 100%;
-
         &__section {
             width: 50%;
             float: left;
@@ -21,6 +18,7 @@
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 9999;
         box-shadow:
             0 6px 10px 0 fade(#000, 10%),
             0 1px 0 -2px fade(#000, 2%),

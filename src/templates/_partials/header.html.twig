@@ -12,10 +12,11 @@
         </div>
         <div class="navbar__inner__section navbar__inner__section--right">
             <nav class="navigation">
-                <a
-                    href="{{ path('archive') }}"
-                    class="navigation__link{% if page == 'archive' %} navigation__link--active{% endif %}"
-                >Archiv akcí</a>
+                {% if page != 'index' %}
+                    <a href="{{ path('index') }}" class="navigation__link">&lsaquo; Domů</a>
+                {% else %}
+                    <a href="{{ path('archive') }}" class="navigation__link">Archiv akcí</a>
+                {% endif %}
             </nav>
         </div>
     </div>
