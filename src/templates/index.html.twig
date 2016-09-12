@@ -4,12 +4,22 @@
     <!-- Introduction -->
     <div class="container--fluid cover offset--bottom--large">
 
-        <div class="offset--bottom--large">{{ data.cover.intro|raw }}</div>
-        <h1 class="cover__title">{{ data.cover.title|raw }}</h1>
-        <h2 class="cover__subtitle offset--bottom--larger">{{ data.cover.subtitle|striptags|raw }}</h2>
+        <div class="text--accent offset--bottom">
+            <strong>{{ data.cover.intro|raw }}</strong>
+        </div>
+
+        <h1>{{ data.cover.title|raw }}</h1>
+        <h2>{{ data.cover.subtitle|striptags|raw }}</h2>
+
+        <!-- Sign up -->
+        {% if data.cover.url %}
+            <p>
+                <a href="{{ data.cover.url|trim }}" class="btn" target="_blank">Přihlásit se</a>
+            </p>
+        {% endif %}
 
         <!-- Sharing -->
-        <div class="social offset--bottom">
+        <div class="offset--top--large">
             <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
                 <img
                     src="{{ asset('images/round-facebook.svg') }}"
@@ -43,35 +53,43 @@
     {% for event in data.events|reverse %}
         {% if event.speakers[0].youtube_id|length > 0 and lastvideo == false %}
             {% set lastvideo = true %}
+
             <div class="container">
-                <h2 class="offset--bottom">{{ event.title|striptags|trim }}</h2>
+                <h2>{{ event.title|striptags|trim|raw }}</h2>
                 <p>
                     {{ event.description|raw }}
                 </p>
             </div>
+
             <div class="container container--xs-fluid">
                 <div class="grid grid--center offset--bottom">
+
                     {% for speaker in event.speakers %}
                         {% set columns = '' %}
                         {% if loop.length == 4 %}
                             {% set columns = 'grid__item--quarter' %}
                         {% endif %}
                         <div class="grid__item {{ columns }}">
-                            <div class="box offset--bottom">
+
+                            <div class="box">
                                 <div class="box__video">
-                                    <iframe src="https://www.youtube.com/embed/{{ speaker.youtube_id }}" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/{{ speaker.youtube_id }}" allowfullscreen frameborder="0"></iframe>
                                 </div>
                             </div>
+
                         </div>
                     {% endfor %}
+
                 </div>
                 <div class="grid grid--center offset--bottom--larger">
                     <div class="grid__item">
-                        <div class="box offset--bottom">
+
+                        <div class="box">
                             <div class="box__text">
                                 <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" class="btn btn--icon btn--icon--youtube">Frontendisti na YouTube</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -161,9 +179,13 @@
                     </div>
                 {% endfor %}
                 <div class="grid__item grid__item--wide">
-                    <p>Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinovi Michálkovi na <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a></p>
+                    <p>
+                        Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinu Michálkovi na
+                        <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>
+                    </p>
                 </div>
             </div>
         </div>
     {% endif %}
+
 {% endblock %}

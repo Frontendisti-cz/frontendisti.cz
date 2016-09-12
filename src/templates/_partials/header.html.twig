@@ -2,12 +2,15 @@
     <div class="container navbar__inner">
         <div class="navbar__inner__section">
             <a href="{{ path('index') }}" class="logo u__clear-link">
-                <img src="{{ asset('images/logo.svg') }}" height="30" alt="Frontendisti.cz">
+                <img src="{{ asset('images/logo.svg') }}" height="30" alt="Frontendisti.cz" />
             </a>
         </div>
         <div class="navbar__inner__section navbar__inner__section--right">
             <nav class="navigation">
-                <a href="{{ path('archive') }}" class="navigation__link{% if page == 'archive' %} active{% endif %}">Archiv akcí</a>
+                <a
+                    href="{{ path('archive') }}"
+                    class="navigation__link{% if page == 'archive' %} active{% endif %}"
+                >Archiv akcí</a>
             </nav>
         </div>
     </div>

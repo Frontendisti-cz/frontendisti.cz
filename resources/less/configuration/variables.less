@@ -21,8 +21,25 @@
 @screen-large: 1400px;
 
 // Typography
+// ==========
+
+// Modular scale
+// Base: 16px
+// Ratio: 1.25
+// @url http://www.modularscale.com/?16&px&1.25&web&text
 @font-size: 16px;
-@font-size-desktop: 20px;
+@font-size-desktop: 19px;
+@modular-scale-ratio: 1.25;
+@line-height: 1.75;
+
+@font-size-h1: 1rem * pow(@modular-scale-ratio, 3);
+@font-size-h1-tablet: 1rem * pow(@modular-scale-ratio, 4);
+@font-size-h1-desktop: 1rem * pow(@modular-scale-ratio, 5);
+@font-size-h2: 1rem * pow(@modular-scale-ratio, 2);
+@font-size-h3: 1rem * pow(@modular-scale-ratio, 1);
+@font-size-h4: 1rem;
+@font-size-small: 1rem / @modular-scale-ratio;
+@font-size-smaller: 1rem / @modular-scale-ratio - 1;
 
 // Components
 // ==========
