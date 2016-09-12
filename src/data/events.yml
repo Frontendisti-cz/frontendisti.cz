@@ -70,8 +70,8 @@
     more_links:
          -   title: Všechny přednášky v playlistu
              url: https://www.youtube.com/playlist?list=PLnXfazh66kVfrUeChLakQwaXiXvoK15B7
-         -   title: Moderovaná diskuze na téma CSS preprocesory
-             url: https://www.youtube.com/watch?v=yywYWab89NE
+#         -   title: Moderovaná diskuze na téma CSS preprocesory
+#             url: https://www.youtube.com/watch?v=yywYWab89NE
 -   id: 2
     slug: newslettery
     title: Kódování newsletterů
@@ -102,8 +102,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcXGTWV1Fx2K-5i53nktdLw<br/>
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-26-3-2014-brno-k-dov-n
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-26-3-2014-brno-k-dov-n
 -   id: 3
     slug: organizace
     title: Organizace kódu
@@ -134,8 +134,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVejEaZgbjV0nkmJ_gS3V7A1<br/>
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-organizace-kodu
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-organizace-kodu
 -   id: 4
     slug: ux
     title: UX
@@ -163,8 +163,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfJIVCOqWV3Mxoi9NRO75oG
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-ux
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-ux
         -   title: "Představení #HeurekaChallange"
             url: https://www.youtube.com/watch?v=mm5YJkZbM8I
     partners_title: Sponzor akce:
@@ -202,8 +202,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: http://www.youtube.com/playlist?list=PLnXfazh66kVdsq88BcTL-luM-Rr3EsVBM<br/>
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/css_frameworky<br/>
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/css_frameworky<br/>
         -   title: "Soutěž #HeurekaChallange"
             url: https://www.youtube.com/watch?v=-vM2a_XsbDI
     partners_title: Sponzor akce:
@@ -239,8 +239,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: http://www.youtube.com/playlist?list=PLnXfazh66kVd_AuG1fVQYWoya4b1NyNeR
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-responzivni-media
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-responzivni-media
         -   title: HeurekaDevs na Smashing Conference
             url: https://www.youtube.com/watch?v=U7vMkp6J_mI&amp;index=2&amp;list=PLnXfazh66kVd_AuG1fVQYWoya4b1NyNeR
         -   title: "Soutěž #HeurekaChallange 2"
@@ -280,8 +280,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcYKCxuTxFZdHLDS6YtefWU
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-31102014-praha-psd-ci-nepsd
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-31102014-praha-psd-ci-nepsd
 -   id: 8
     slug: svg
     title: SVG v Brně
@@ -312,8 +312,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcLpo9sIRiPfBzf1VPIaFo8<br/>
-        -   title: Zvukový záznam z diskuze
-            url: https://soundcloud.com/frontendisti/diskuze-prosinec-2014-svg-v-brne
+#        -   title: Zvukový záznam z diskuze
+#            url: https://soundcloud.com/frontendisti/diskuze-prosinec-2014-svg-v-brne
 -   id: 9
     slug: automatizace
     title: Automatizace v Ostravě
@@ -343,8 +343,8 @@
     more_links:
         -   title: Všechny přednášky v playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfswYfcSqw3oWAzrtMEIM21
-        -   title: Zvukový záznam z diskuze (25:25 ~ 6.76MB)
-            url: http://www.frontendisti.cz/?podcast_episode=/uploads/2015/02/Frontendisti.cz_.Diskuze.008-Automatizace.mp3
+#        -   title: Zvukový záznam z diskuze (25:25 ~ 6.76MB)
+#            url: http://www.frontendisti.cz/?podcast_episode=/uploads/2015/02/Frontendisti.cz_.Diskuze.008-Automatizace.mp3
 -   id: 10
     slug: wp
     title: WordPress v Praze
@@ -698,29 +698,24 @@
         -   title: LMC
             url: http://www.lmc.eu/
             image: LMC_small_logo_RGB_100-250x97.png
--   id: 19
+-   id: 20
     slug: responzivni-patalie
     title: Responzivní patálie v Brně
     description: >
         <strong>Devatenáctý pražský sraz</strong>: čtvrtek 23. 6. 2016, Kiwi.com Brno
     speakers:
         -   name: Karel Škopek
-            name_link: https://twitter.com/filippodstavec
-            image: filip-podstavec.jpg
             company: atoto.cz
             title: Mobile last :(
-        -   name: Pavel Ungr
-            name_link: https://twitter.com/PavelUngr
-            image: pavel-ungr.png
-            company: PavelUngr
-            title: Filtrace pro vyhledávače
-        -   name: Milan Kryl
-            name_link: https://twitter.com/mikr
-            image: milan-kryl.jpg
-            company: mikr
-            title: Pěkné URL
-        -   name: Jan Tichý
-            name_link: https://twitter.com/jantichy
-            image: jan-tichy.jpg
-            company: jantichy
-            title: Vyhledávače a Javascript
+            youtube_id: Vt-3vJpIfu8
+        -   name: Tomáš Krejčí
+            company: SuperKoderi.cz
+            title: Typické chyby designerů při návrhu responzivních webů
+            youtube_id: gL2db0IISRg
+        -   name: Martin Michálek
+            company: Freelancer
+            title: Debugování responzivních webů
+            youtube_id: BuzsK54e5EQ
+    more_links:
+            -   title: Všechny přednášky v playlistu
+                url: https://www.youtube.com/playlist?list=PLnXfazh66kVdYR8zV9qxh7XpmBciO2yW7

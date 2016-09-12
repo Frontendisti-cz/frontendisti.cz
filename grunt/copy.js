@@ -12,15 +12,5 @@ module.exports = {
       },
     ],
   },
-  stories: {
-    files: [
-      {
-        expand: true,
-        cwd: '<%= paths.src %>/stories/',
-        src: ['**/*.{png,jpg}'],
-        dest: '<%= paths.dist %>/stories/',
-      },
-    ],
-  },
 
 };
