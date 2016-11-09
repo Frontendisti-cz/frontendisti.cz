@@ -702,20 +702,49 @@
     slug: responzivni-patalie
     title: Responzivní patálie v Brně
     description: >
-        <strong>Devatenáctý pražský sraz</strong>: čtvrtek 23. 6. 2016, Kiwi.com Brno
+        <strong>Devatenáctý brněnský sraz</strong>: čtvrtek 23. 6. 2016, Kiwi.com Brno
     speakers:
         -   name: Karel Škopek
+            image: karel-skopek.jpg
             company: atoto.cz
             title: Mobile last :(
             youtube_id: Vt-3vJpIfu8
         -   name: Tomáš Krejčí
+            image: tomas-krejci.jpg
             company: SuperKoderi.cz
             title: Typické chyby designerů při návrhu responzivních webů
             youtube_id: gL2db0IISRg
         -   name: Martin Michálek
+            image: martin-michalek.jpg
             company: Freelancer
             title: Debugování responzivních webů
             youtube_id: BuzsK54e5EQ
     more_links:
             -   title: Všechny přednášky v playlistu
                 url: https://www.youtube.com/playlist?list=PLnXfazh66kVdYR8zV9qxh7XpmBciO2yW7
+-   id: 21
+    slug: rizeni-projektu-pro-tymy-i-jednotlivce
+    title: Řízení projektů pro týmy i jednotlivce
+    description: >
+        <strong>Dvacátý pražský sraz</strong>: čtvrtek 15. 9. 2016, Paralelní Polis Praha
+    speakers:
+        -   name: Jiří Knesl
+            name_link: https://twitter.com/jiriknesl
+            image: jiri-knesl.jpg
+            company: Business & IT konzultant
+            title: Jak uřídit projekt
+            youtube_id: RBLJTKbuEWI
+        -   name: Marek Cerman
+            image: marek-cerman.jpg
+            company: LMC
+            title: 5 let s agile
+            youtube_id: KXlqMUalIfY
+        -   name: Dalibor Pulkert
+            name_link: https://twitter.com/daliborpulkert
+            image: dalibor-pulkert.png
+            company: Etnetera
+            title: Dekompozice jako cesta k efektivitě
+            youtube_id: yy6iUVBg5bQ
+    more_links:
+            -   title: Všechny přednášky v playlistu
+                url: https://www.youtube.com/playlist?list=PLnXfazh66kVd87yBmupLBNMlABN0BL-tz

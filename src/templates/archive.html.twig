@@ -25,7 +25,7 @@
                             <div class="box offset--bottom--large">
                                 {% if speaker.image|length > 0 %}
                                     <div class="box__illustration">
-                                        <img src="{{ image('images/people/' ~ speaker.image).cropResize(400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
+                                        <img src="{{ image('images/people/' ~ speaker.image).zoomCrop(400, 400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
                                     </div>
                                 {% endif %}
                                 <div class="box__text">
