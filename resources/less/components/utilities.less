@@ -4,11 +4,11 @@
     }
 
     &__text--small {
-        font-size: .9rem;
+        font-size: @font-size-small;
     }
 
-    &__text--smaller {
-        font-size: .8rem;
+    &__text--accent {
+        color: @brand-accent;
     }
 
     &__pull--right {
@@ -25,7 +25,13 @@
         height: auto;
     }
 
-    &__clear-link {
+    &__link-unstyled {
         border-bottom: none;
+    }
+
+    &__hidden--mobile {
+        @media (max-width: (@screen-phablet - 1)) {
+            display: none;
+        }
     }
 }
