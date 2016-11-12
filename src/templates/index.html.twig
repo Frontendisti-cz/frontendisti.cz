@@ -15,7 +15,9 @@
             <!-- Sign up -->
             {% if data.cover.url %}
                 <p>
-                    <a href="{{ data.cover.url|trim }}" class="button" target="_blank">Přihlásit se</a>
+                    <a href="{{ data.cover.url|trim }}" class="button button--primary" target="_blank">
+                        Přihlásit se
+                    </a>
                 </p>
             {% endif %}
 
@@ -92,7 +94,10 @@
 
                         <div class="box">
                             <div class="box__text">
-                                <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" class="btn btn--icon btn--icon--youtube">Frontendisti na YouTube</a>
+                                <a
+                                    href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
+                                    class="button"
+                                >Frontendisti na YouTube</a>
                             </div>
                         </div>
 
@@ -105,47 +110,39 @@
     <!-- CTAs -->
     <div class="container">
         <div class="grid offset--bottom--larger">
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-group.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Nenechte si ujít<br />
-                            další sraz!
-                        </h2>
-                        <a href="http://srazy.info/frontendisti/" class="btn btn--icon btn--icon--srazy">Frontendisti na Srazy.info</a>
-                    </div>
-                </div>
+            <div class="grid__item u__text--center offset--bottom--large">
+
+                <img src="{{ asset('images/box-group.svg') }}" height="80" class="u__hidden--mobile" alt="" />
+                <h2 class="h3 offset--bottom">
+                    Nenechte si ujít<br class="u__hidden--mobile" />
+                    další&nbsp;sraz!
+                </h2>
+                <a href="http://srazy.info/frontendisti/" class="button">
+                    Frontendisti na&nbsp;Srazech
+                </a>
+
             </div>
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-chat.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Pojďte diskutovat<br />
-                            o webovém frontendu!
-                        </h2>
-                        <a href="https://www.facebook.com/frontendisti/" class="btn btn--icon btn--icon--facebook">Frontendisti Facebook</a>
-                    </div>
-                </div>
+            <div class="grid__item u__text--center offset--bottom--large">
+
+                <img src="{{ asset('images/box-chat.svg') }}" height="80" class="u__hidden--mobile" alt="" />
+                <h2 class="h3 offset--bottom">
+                    Pojďte diskutovat o&nbsp;webovém&nbsp;frontendu!
+                </h2>
+                <a href="https://www.facebook.com/frontendisti/" class="button">
+                    Frontendisti na&nbsp;Facebooku
+                </a>
+
             </div>
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-job.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Hledáte nebo nabízíte práci<br />
-                            v oboru webového frontendu?
-                        </h2>
-                        <a href="https://www.facebook.com/groups/frontendistiprace/" class="btn btn--icon btn--icon--facebook">Frontend práce na Facebooku</a>
-                    </div>
-                </div>
+            <div class="grid__item u__text--center offset--bottom--large">
+
+                <img src="{{ asset('images/box-job.svg') }}" height="80" class="u__hidden--mobile" alt="" />
+                <h2 class="h3 offset--bottom">
+                    Hledáte nebo nabízíte práci v&nbsp;oboru webového&nbsp;frontendu?
+                </h2>
+                <a href="https://www.facebook.com/groups/frontendistiprace/" class="button">
+                    Frontend práce na&nbsp;Facebooku
+                </a>
+
             </div>
         </div>
     </div>

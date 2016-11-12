@@ -1,0 +1,31 @@
+.button {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .4rem 2rem .6rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+    color: @button-default-color;
+    background-color: @button-default-bg;
+    border-bottom-style: none;
+    border-radius: 3px;
+    box-shadow: inset 0 -2px 0 fade(#000, 30%);
+
+    &:hover,
+    &:focus {
+        color: @button-default-color-hover;
+        background-color: @button-default-bg-hover;
+    }
+
+    &--primary {
+        color: @button-primary-color;
+        background-color: @button-primary-bg;
+
+        &:hover,
+        &:focus {
+            color: @button-primary-color-hover;
+            background-color: @button-primary-bg-hover;
+        }
+    }
+}
