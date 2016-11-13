@@ -1,0 +1,24 @@
+// We cannot use simple `.container` due to conflict with Flexboxgrid.
+.layout-container {
+    box-sizing: border-box;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    &--fluid {
+        max-width: none;
+    }
+
+    &--expand-xs {
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+
+        @media (min-width: @screen-xs) {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    }
+}

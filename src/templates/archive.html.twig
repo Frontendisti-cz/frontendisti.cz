@@ -5,13 +5,13 @@
 {% block description %}Archiv minikonferencí webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.{% endblock %}
 
 {% block sublayout %}
-    <div class="container">
+    <div class="layout-container">
         <h1 class="offset--bottom">Archiv akcí</h1>
     </div>
     {% for event in data.events|reverse %}
         <div class="event">
-            <div class="container offset--bottom--large">
-                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" id="{{ event.slug|striptags|trim }}" class="u__clear-link">{{ event.title|striptags|trim }}</a></h2>
+            <div class="layout-container offset--bottom--large">
+                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" id="{{ event.slug|striptags|trim }}" class="u__link-unstyled">{{ event.title|striptags|trim }}</a></h2>
                 <div class="offset--bottom--large">
                     {{ event.description|raw }}
                 </div>

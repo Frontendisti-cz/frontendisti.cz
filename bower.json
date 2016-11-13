@@ -8,6 +8,7 @@
   "license": "unlicensed",
   "private": true,
   "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "flexboxgrid": "^6.3.2"
   }
 }

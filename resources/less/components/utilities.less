@@ -30,7 +30,7 @@
     }
 
     &__hidden--mobile {
-        @media (max-width: (@screen-phablet - 1)) {
+        @media (max-width: ~"calc(@{screen-sm} - 1px)") {
             display: none;
         }
     }
