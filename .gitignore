@@ -1,14 +1,9 @@
 /.tmp
-/.idea
 
 /bower_components
-/deployment.*.log
 /node_modules
-/vendor
 
 /web/css/*
-/web/fonts/*
-/web/js/*
 /web/images/*
 /web/image_cache/*
-/web/vendor/*
+/web/media/*

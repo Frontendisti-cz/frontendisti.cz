@@ -10,5 +10,9 @@ module.exports = {
     files: ['<%= paths.src %>/images/**/*'],
     tasks: ['build-images'],
   },
+  media: {
+    files: ['<%= paths.src %>/media/**/*'],
+    tasks: ['copy'],
+  },
 
 };

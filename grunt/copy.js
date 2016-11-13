@@ -2,13 +2,13 @@
 
 module.exports = {
 
-  fonts: {
+  dist: {
     files: [
       {
         expand: true,
-        cwd: '<%= paths.src %>/fonts/',
-        src: ['**/*'],
-        dest: '<%= paths.dist %>/fonts/',
+        cwd: '<%= paths.src %>/',
+        src: ['media/**/*'],
+        dest: '<%= paths.dist %>/',
       },
     ],
   },
