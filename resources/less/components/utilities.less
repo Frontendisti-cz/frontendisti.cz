@@ -11,14 +11,6 @@
         color: @brand-accent;
     }
 
-    &__pull--right {
-        float: right;
-    }
-
-    &__pull--left {
-        float: left;
-    }
-
     &__image-responsive {
         display: block;
         max-width: 100%;
@@ -29,8 +21,8 @@
         border-bottom: none;
     }
 
-    &__hidden--mobile {
-        @media (max-width: ~"calc(@{screen-sm} - 1px)") {
+    &__hidden-xs {
+        @media (max-width: @screen-xs) {
             display: none;
         }
     }
