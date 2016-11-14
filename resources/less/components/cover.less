@@ -1,7 +1,7 @@
 // Gradient source: http://lea.verou.me/css3patterns/#japanese-cube
 .cover {
-    padding-top: 2rem * @line-height;
-    padding-bottom: 2rem * @line-height;
+    padding-top: 2rem * @typography-line-height;
+    padding-bottom: 2rem * @typography-line-height;
     text-align: center;
     color: #fff;
     background-color: @cover-tile-color;
@@ -21,8 +21,8 @@
         0 0,
         @cover-tile-projected-width @cover-tile-projected-height;
 
-    @media (min-width: @screen-md) {
-        padding-top: 3rem * @line-height;
-        padding-bottom: 3rem * @line-height;
+    @media (min-width: @layout-screen-md) {
+        padding-top: 3rem * @typography-line-height;
+        padding-bottom: 3rem * @typography-line-height;
     }
 }

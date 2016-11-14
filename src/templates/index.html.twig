@@ -2,10 +2,10 @@
 
 {% block sublayout %}
     <!-- Introduction -->
-    <div class="cover offset--bottom--large">
+    <div class="cover offset-bottom--large">
         <div class="layout-container">
 
-            <div class="u__text--accent offset--bottom">
+            <div class="typography-text-accent offset-bottom">
                 <strong>{{ data.cover.intro|raw }}</strong>
             </div>
 
@@ -22,7 +22,7 @@
             {% endif %}
 
             <!-- Social Networks -->
-            <div class="offset--top--large">
+            <div class="offset-top--large">
                 <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
                     <img
                         src="{{ asset('images/facebook.svg') }}"
@@ -74,20 +74,19 @@
                     {% for speaker in event.speakers %}
                         <div class="col-xs-12 col-md">
 
-                            <div class="box offset--bottom">
-                                <div class="box__video">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/{{ speaker.youtube_id }}"
-                                        allowfullscreen
-                                        frameborder="0"
-                                    ></iframe>
-                                </div>
+                            <div class="video offset-bottom">
+                                <iframe
+                                    src="https://www.youtube.com/embed/{{ speaker.youtube_id }}"
+                                    class="video__player"
+                                    allowfullscreen
+                                    frameborder="0"
+                                ></iframe>
                             </div>
 
                         </div>
                     {% endfor %}
                 </div><!-- .row -->
-                <div class="row center-xs u__text--center offset--bottom--larger">
+                <div class="row center-xs typography-text-center offset-bottom--larger">
                     <div class="col-xs-10 col-sm-6 col-md-4">
 
                         <a
@@ -105,13 +104,13 @@
     {% endfor %}
 
     <!-- CTAs -->
-    <div class="layout-container layout-container--expand-xs u__text--center offset--bottom--large">
+    <div class="layout-container layout-container--expand-xs typography-text-center offset-bottom--large">
         <div class="row center-xs bottom-sm">
-            <div class="col-xs-10 col-sm-6 col-md-4 offset--bottom--large">
+            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/group_work.svg') }}" height="80" class="u__hidden-xs" alt="" />
-                <h2 class="h3 offset--bottom">
-                    Nenechte si ujít<br class="u__hidden-xs" />
+                <img src="{{ asset('images/group_work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                <h2 class="typography-h3 offset-bottom">
+                    Nenechte si ujít<br class="typography-hidden-xs" />
                     další&nbsp;sraz!
                 </h2>
                 <a href="http://srazy.info/frontendisti/" class="button button--block">
@@ -120,10 +119,10 @@
                 </a>
 
             </div>
-            <div class="col-xs-10 col-sm-6 col-md-4 offset--bottom--large">
+            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/chat.svg') }}" height="80" class="u__hidden-xs" alt="" />
-                <h2 class="h3 offset--bottom">
+                <img src="{{ asset('images/chat.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                <h2 class="typography-h3 offset-bottom">
                     Pojďte diskutovat o&nbsp;webovém&nbsp;frontendu!
                 </h2>
                 <a href="https://www.facebook.com/frontendisti/" class="button button--block">
@@ -132,10 +131,10 @@
                 </a>
 
             </div>
-            <div class="col-xs-10 col-sm-6 col-md-4 offset--bottom--large">
+            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/work.svg') }}" height="80" class="u__hidden-xs" alt="" />
-                <h2 class="h3 offset--bottom">
+                <img src="{{ asset('images/work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                <h2 class="typography-h3 offset-bottom">
                     Hledáte nebo nabízíte práci v&nbsp;oboru webového&nbsp;frontendu?
                 </h2>
                 <a href="https://www.facebook.com/groups/frontendistiprace/" class="button button--block">
@@ -149,56 +148,57 @@
 
     <!-- Humans -->
     {% if data.team|length > 0 %}
-        <div class="layout-container u__text--center">
+        <div class="layout-container typography-text-center">
 
-            <h2 class="offset--bottom">Organizační štáb</h2>
+            <h2 class="offset-bottom--large">Organizační štáb</h2>
 
-            <div class="row center-xs offset--bottom--large">
+            <div class="row center-xs offset-bottom--large">
                 {% for member in data.team %}
                     <div class="col-xs-6 col-sm-4 col-md-3">
 
-                        <div class="box offset--bottom--large">
-                            <img
-                                src="{{ image('media/people/' ~ member.image).cropResize(400) }}"
-                                class="box__image box__image--round"
-                                alt="{{ member.name }}"
-                            />
-                            <div class="box__text">
-                                <h3 class="box__title">
-                                    <strong>{{ member.name|striptags|trim }}</strong>
-                                </h3>
-                                {% if member.position|length > 0 %}
-                                    <div class="u__text--small">
-                                        {{ member.position|raw }}
-                                    </div>
-                                {% endif %}
-                                {% if member.email|length > 0 %}
-                                    <div class="u__text--small">
-                                        E:&nbsp
-                                        <a href="mailto:{{ member.email|striptags|trim }}" target="_blank">
-                                            {{ member.email|striptags|trim }}
-                                        </a>
-                                    </div>
-                                {% endif %}
-                                {% if member.twitter|length > 0 %}
-                                    <div class="u__text--small">
-                                        <a
-                                            href="https://twitter.com/{{ member.twitter|striptags|trim }}"
-                                            target="_blank"
-                                        >
-                                            @{{ member.twitter|striptags|trim }}
-                                        </a>
-                                    </div>
-                                {% endif %}
-                            </div>
-                        </div>
+                        <img
+                            src="{{ image('media/people/' ~ member.image).cropResize(200) }}"
+                            srcset="
+                                {{ image('media/people/' ~ member.image).cropResize(200) }},
+                                {{ image('media/people/' ~ member.image).cropResize(400) }} 2x
+                            "
+                            width="200"
+                            height="200"
+                            class="typography-image-responsive typography-image-responsive--center typography-image-circle"
+                            alt="{{ member.name }}"
+                        />
+                        <h3>{{ member.name|striptags|trim }}</h3>
+                        <ul class="list list--clip typography-text-small">
+                            {% if member.position|length > 0 %}
+                                <li class="list__item">
+                                    {{ member.position|raw }}
+                                </li>
+                            {% endif %}
+                            {% if member.email|length > 0 %}
+                                <li class="list__item">
+                                    <a href="mailto:{{ member.email|striptags|trim }}">
+                                        {{ member.email|striptags|trim }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if member.twitter|length > 0 %}
+                                <li class="list__item">
+                                    <a
+                                        href="https://twitter.com/{{ member.twitter|striptags|trim }}"
+                                        target="_blank"
+                                    >
+                                        @{{ member.twitter|striptags|trim }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
 
                     </div>
                 {% endfor %}
             </div><!-- .row -->
         {% endif %}
 
-        <p>
+        <p class="offset-bottom--large">
             Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinu Michálkovi
             na&nbsp;<a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>.
         </p>

@@ -1,14 +1,14 @@
 html {
-    font-size: @font-size;
+    font-size: @typography-font-size;
 
-    @media (min-width: @screen-sm) {
-        font-size: @font-size-desktop;
+    @media (min-width: @layout-screen-sm) {
+        font-size: @typography-font-size-desktop;
     }
 }
 
 body {
-    font: 300 1em/@line-height 'Playfair Display', times, serif;
-    color: @text-color;
+    font: 300 1em/@typography-line-height 'Playfair Display', times, serif;
+    color: @typography-text-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -17,46 +17,46 @@ h1,
 h2,
 h3,
 h4,
-.h1,
-.h2,
-.h3,
-.h4 {
-    margin: 0 0 (1rem * @line-height);
+.typography-h1,
+.typography-h2,
+.typography-h3,
+.typography-h4 {
+    margin: 0 0 (1rem * @typography-line-height);
     font-weight: normal;
     line-height: 1.25;
 }
 
 h1,
-.h1 {
+.typography-h1 {
     font-weight: 700;
-    font-size: @font-size-h1;
+    font-size: @typography-font-size-h1;
 
-    @media (min-width: @screen-sm) {
-        font-size: @font-size-h1-tablet;
+    @media (min-width: @layout-screen-sm) {
+        font-size: @typography-font-size-h1-tablet;
     }
 
-    @media (min-width: @screen-md) {
-        font-size: @font-size-h1-desktop;
+    @media (min-width: @layout-screen-md) {
+        font-size: @typography-font-size-h1-desktop;
     }
 }
 
 h2,
-.h2 {
-    font-size: @font-size-h2;
+.typography-h2 {
+    font-size: @typography-font-size-h2;
 }
 
 h3,
-.h3 {
-    margin-top: 1rem * @line-height;
-    margin-bottom: .5rem * @line-height;
-    font-size: @font-size-h3;
+.typography-h3 {
+    margin-top: 1rem * @typography-line-height;
+    margin-bottom: .5rem * @typography-line-height;
+    font-size: @typography-font-size-h3;
 }
 
 h4,
-.h4 {
-    margin-top: 1rem * @line-height;
-    margin-bottom: .5rem * @line-height;
-    font-size: @font-size-h4;
+.typography-h4 {
+    margin-top: 1rem * @typography-line-height;
+    margin-bottom: .5rem * @typography-line-height;
+    font-size: @typography-font-size-h4;
 }
 
 a {
@@ -72,5 +72,46 @@ a {
 }
 
 p {
-    margin: 0 0 (1rem * @line-height);
+    margin: 0 0 (1rem * @typography-line-height);
 }
+
+// Typography classes
+.typography {
+    &-text-center {
+        text-align: center;
+    }
+
+    &-text-small {
+        font-size: @typography-font-size-small;
+    }
+
+    &-text-accent {
+        color: @color-brand-accent;
+    }
+
+    &-link-unstyled {
+        border-bottom: none;
+    }
+
+    &-image-circle {
+        border-radius: 50%;
+    }
+
+    &-image-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        &--center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &-hidden-xs {
+        @media (max-width: @layout-screen-xs) {
+            display: none;
+        }
+    }
+}
+

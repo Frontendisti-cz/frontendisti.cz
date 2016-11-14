@@ -1,73 +1,65 @@
-// Common Settings
-// ===============
+// Colors
+@color-gray-darker: #2b2b2b;
+@color-gray-dark: #444;
+@color-gray: #555;
+@color-gray-light: #999;
+@color-gray-lighter: #e6e6e6;
 
-// Colours
-@gray-darker: #2b2b2b;
-@gray-dark: #444;
-@gray: #555;
-@gray-light: #999;
-@gray-lighter: #e6e6e6;
+@color-brand-blue: #16263b;
+@color-brand-orange: #ff9900;
+@color-brand-gray: @color-gray-darker;
 
-@brand-blue: #16263b;
-@brand-orange: #ff9900;
-@brand-gray: @gray-darker;
-
-@brand-primary: @brand-blue;
-@brand-accent: @brand-orange;
+@color-brand-primary: @color-brand-blue;
+@color-brand-accent: @color-brand-orange;
 
 // Layout
 // Values should match Flexboxgrid's breakpoints.
-@screen-xs: 30em;
-@screen-sm: 48em;
-@screen-md: 64em;
-@screen-lg: 75em;
+@layout-screen-xs: 30em;
+@layout-screen-sm: 48em;
+@layout-screen-md: 64em;
+@layout-screen-lg: 75em;
 
 // Typography
-// ==========
-
 // Modular scale
 // Base: 16px
 // Ratio: 1.25
 // @url http://www.modularscale.com/?16&px&1.25&web&text
-@font-size: 16px;
-@font-size-desktop: 19px;
-@modular-scale-ratio: 1.25;
-@line-height: 1.75;
+@typography-font-size: 16px;
+@typography-font-size-desktop: 19px;
+@typography-modular-scale-ratio: 1.25;
+@typography-line-height: 1.75;
 
-@font-size-h1: 1rem * pow(@modular-scale-ratio, 3);
-@font-size-h1-tablet: 1rem * pow(@modular-scale-ratio, 4);
-@font-size-h1-desktop: 1rem * pow(@modular-scale-ratio, 5);
-@font-size-h2: 1rem * pow(@modular-scale-ratio, 2);
-@font-size-h3: 1rem * pow(@modular-scale-ratio, 1);
-@font-size-h4: 1rem;
-@font-size-small: 1rem / @modular-scale-ratio;
+@typography-font-size-h1: 1rem * pow(@typography-modular-scale-ratio, 3);
+@typography-font-size-h1-tablet: 1rem * pow(@typography-modular-scale-ratio, 4);
+@typography-font-size-h1-desktop: 1rem * pow(@typography-modular-scale-ratio, 5);
+@typography-font-size-h2: 1rem * pow(@typography-modular-scale-ratio, 2);
+@typography-font-size-h3: 1rem * pow(@typography-modular-scale-ratio, 1);
+@typography-font-size-h4: 1rem;
+@typography-font-size-small: 1rem / @typography-modular-scale-ratio;
 
-@text-color: @brand-gray;
-
-// Components
-// ==========
+@typography-text-color: @color-brand-gray;
 
 // Button
 @button-default-color: #fff;
-@button-default-bg: @brand-gray;
+@button-default-bg: @color-brand-gray;
 @button-default-color-hover: #fff;
-@button-default-bg-hover: darken(@brand-gray, 10%);
+@button-default-bg-hover: darken(@color-brand-gray, 10%);
 
 @button-primary-color: #fff;
-@button-primary-bg: @brand-accent;
+@button-primary-bg: @color-brand-accent;
 @button-primary-color-hover: #fff;
-@button-primary-bg-hover: darken(@brand-accent, 10%);
+@button-primary-bg-hover: darken(@color-brand-accent, 10%);
 
 // Cover
 @cover-tile-projected-width: 45px;
 @cover-tile-projected-height: @cover-tile-projected-width * 1.75;
-@cover-tile-color: @brand-blue;
+@cover-tile-color: @color-brand-blue;
 @cover-tile-color-light: lighten(@cover-tile-color, 6%);
 @cover-tile-color-dark: darken(@cover-tile-color, 6%);
 
 // Navbar
-@navbar-height: 3rem * @line-height;
+@navbar-height: 3rem * @typography-line-height;
 
 // Navigation
-@navigation-link-color: @gray-light;
-@navigation-link-color-hover: @brand-gray;
+@navigation-link-color: @color-gray-light;
+@navigation-link-color-hover: @color-brand-gray;
