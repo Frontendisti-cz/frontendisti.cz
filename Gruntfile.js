@@ -12,6 +12,7 @@ module.exports = function (grunt) {
       src: 'resources',
       dist: 'web',
       bower: 'bower_components',
+      data: 'src/data',
       templates: 'src/templates',
       temp: '.tmp',
     },

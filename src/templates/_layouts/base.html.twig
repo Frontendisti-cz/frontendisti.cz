@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="{{ locale|split('_')[0] }}">
 <head>
     <meta charset="utf-8" />
     <link rel="dns-prefetch" href="//ajax.googleapis.com" />
@@ -8,23 +8,40 @@
     <link rel="dns-prefetch" href="//google-analytics.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>{% filter striptags|trim %}{% block title %}Frontendisti.cz | Minikonference webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.{% endblock %}{% endfilter %}</title>
+    <title>
+        {%- filter striptags|trim -%}
+            {%- block title -%}
+                Frontendisti.cz | Minikonference webových designérů a vývojářů orientovaných na HTML, CSS a trochu
+                JavaScript.
+            {%- endblock -%}
+        {%- endfilter -%}
+    </title>
 
-    <meta name="description" content="{% filter striptags|trim %}{% block description %}Minikonference webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.{% endblock %}{% endfilter %}" />
+    <meta
+        name="description"
+        content="
+            {%- filter striptags|trim -%}
+                {%- block description -%}
+                    Minikonference webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.
+                {%- endblock -%}
+            {%- endfilter -%}
+        "
+    />
     <meta name="author" content="VisionApps, s.r.o." />
 
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" href="{{ asset('favicon.ico') }}" />
     <link rel="apple-touch-icon-precomposed" href="{{ asset('apple-touch-icon.png') }}" />
 
     {% block styles %}
         <link rel="stylesheet" href="{{ asset('css/main.min.css') }}" />
     {% endblock %}
 
+    <!-- Google Fonts -->
     <script>
         WebFontConfig = {
-            google: { families: [ 'Playfair Display:400,700,700&subset=latin,latin-ext' ] }
+            google: { families: [ 'Playfair Display:400,700&subset=latin,latin-ext' ] }
         };
         (function() {
             var wf = document.createElement('script');
@@ -54,13 +71,12 @@
 <header role="banner" class="header">
     {% include '_partials/header.html.twig' %}
 </header>
-
 <main role="main" class="main site__content">
     {% block sublayout %}{% endblock %}
 </main>
-
 <footer role="contentinfo" class="footer">
     {% include '_partials/footer.html.twig' %}
 </footer>
+
 </body>
 </html>

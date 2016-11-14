@@ -1,0 +1,11 @@
+.list {
+    padding-left: 0;
+    list-style: none;
+
+    &--clip > .list__item {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

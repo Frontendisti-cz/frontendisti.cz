@@ -1,25 +1,19 @@
 .navigation {
     display: block;
+    margin-right: -1rem;
     text-align: right;
 
     &__link {
         position: relative;
-        font-weight: bold;
         display: inline-block;
-        padding: 1.6rem 1rem;
-        border-bottom: none;
-        color: fade(#000, 60%);
+        padding: ((@navbar-height - @typography-line-height) / 2) 1rem;
+        font-weight: bold;
+        color: @navigation-link-color;
+        border-bottom-style: none;
 
         &:hover,
-        &:active,
-        &.active {
-            color: #000;
-        }
-
-        @media (min-width: @screen-tablet) {
-            padding: 1.5rem 2rem;
+        &:focus {
+            color: @navigation-link-color-hover;
         }
     }
-
-
 }

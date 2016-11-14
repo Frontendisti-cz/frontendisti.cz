@@ -1,143 +1,214 @@
 {% extends '_layouts/base.html.twig' %}
 
 {% block sublayout %}
-    <div class="container--fluid cover offset--bottom--large">
-        <div class="offset--bottom--large">{{ data.cover.intro|raw }}</div>
-        <h1>{{ data.cover.title|raw }}</h1>
-        <h2 class="offset--bottom--larger">{{ data.cover.subtitle|striptags|raw }}</h2>
-        <div class="social offset--bottom">
-            <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
-                <img src="{{ asset('images/round-facebook.svg') }}" alt="Frontendisti na Facebooku">
-            </a>
-            <a href="https://www.twitter.com/frontendisti/" target="_blank" class="social__icon">
-                <img src="{{ asset('images/round-twitter.svg') }}" alt="@Frontendisti na Twitteru">
-            </a>
-            <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" target="_blank" class="social__icon">
-                <img src="{{ asset('images/round-youtube.svg') }}" alt="Frontendisti na Youtube">
-            </a>
-        </div>
-    </div>
+    <!-- Introduction -->
+    <section class="cover">
+        <div class="layout-container">
+
+            <div class="typography-text-accent offset-bottom">
+                <strong>{{ data.cover.intro|raw }}</strong>
+            </div>
+
+            <h1>{{ data.cover.title|raw }}</h1>
+            <h2>{{ data.cover.subtitle|striptags|raw }}</h2>
+
+            <!-- Sign up -->
+            {% if data.cover.url %}
+                <p>
+                    <a href="{{ data.cover.url|trim }}" class="button button--primary" target="_blank">
+                        Přihlásit se
+                    </a>
+                </p>
+            {% endif %}
+
+            <!-- Social Networks -->
+            <div class="offset-top--large">
+                <a href="https://www.facebook.com/frontendisti/" target="_blank" class="social__icon">
+                    <img
+                        src="{{ asset('images/facebook.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="Frontendisti na Facebooku"
+                    />
+                </a>
+                <a href="https://www.twitter.com/frontendisti/" target="_blank" class="social__icon">
+                    <img
+                        src="{{ asset('images/twitter.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="@Frontendisti na Twitteru"
+                    />
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
+                    target="_blank"
+                    class="social__icon"
+                >
+                    <img
+                        src="{{ asset('images/youtube.svg') }}"
+                        width="40"
+                        height="40"
+                        alt="Frontendisti na YouTube"
+                    />
+                </a>
+            </div>
+
+        </div><!-- .layout-container -->
+    </section><!-- .cover -->
+
+    <!-- Recent Event's Videos -->
     {% set lastvideo = false %}
     {% for event in data.events|reverse %}
         {% if event.speakers[0].youtube_id|length > 0 and lastvideo == false %}
             {% set lastvideo = true %}
-            <div class="container">
-                <h2 class="offset--bottom">{{ event.title|striptags|trim }}</h2>
-                <div class="offset--bottom">
-                    {{ event.description|raw }}
-                </div>
-            </div>
-            <div class="container container--xs-fluid">
-                <div class="grid grid--center offset--bottom">
-                    {% for speaker in event.speakers %}
-                        {% set columns = '' %}
-                        {% if loop.length == 4 %}
-                            {% set columns = 'grid__item--quarter' %}
-                        {% endif %}
-                        <div class="grid__item {{ columns }}">
-                            <div class="box offset--bottom">
-                                <div class="box__video">
-                                    <iframe src="https://www.youtube.com/embed/{{ speaker.youtube_id }}" allowfullscreen></iframe>
+
+            <section class="section">
+                <div class="layout-container">
+                    <h2>{{ event.title|striptags|trim|raw }}</h2>
+                    <p>
+                        {{ event.description|raw }}
+                    </p>
+                </div><!-- .layout-container -->
+
+                <div class="layout-container layout-container--expand-xs">
+                    <div class="row">
+                        {% for speaker in event.speakers %}
+                            <div class="col-xs-12 col-md">
+
+                                <div class="video offset-bottom">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/{{ speaker.youtube_id }}"
+                                        class="video__player"
+                                        allowfullscreen
+                                        frameborder="0"
+                                    ></iframe>
                                 </div>
+
                             </div>
+                        {% endfor %}
+                    </div><!-- .row -->
+                    <div class="row center-xs typography-text-center">
+                        <div class="col-xs-10 col-sm-6 col-md-4">
+
+                            <a
+                                href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
+                                class="button button--primary button--block offset-bottom"
+                            >
+                                Frontendisti<br />
+                                na YouTube
+                            </a>
+
                         </div>
-                    {% endfor %}
-                </div>
-                <div class="grid grid--center offset--bottom--larger">
-                    <div class="grid__item">
-                        <div class="box offset--bottom">
-                            <div class="box__text">
-                                <a href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw" class="btn btn--icon btn--icon--youtube">Frontendisti na YouTube</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!-- .row -->
+                </div><!-- .layout-container -->
+            </section>
         {% endif %}
     {% endfor %}
-    <div class="container">
-        <div class="grid offset--bottom--larger">
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-group.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Nenechte si ujít<br />
-                            další sraz!
-                        </h2>
-                        <a href="http://srazy.info/frontendisti/" class="btn btn--icon btn--icon--srazy">Frontendisti na Srazy.info</a>
-                    </div>
+
+    <!-- CTAs -->
+    <section class="section typography-text-center">
+        <div class="layout-container layout-container--expand-xs">
+            <div class="row center-xs bottom-sm">
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+
+                    <img src="{{ asset('images/group_work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Nenechte si ujít<br class="typography-hidden-xs" />
+                        další&nbsp;sraz!
+                    </h2>
+                    <a href="http://srazy.info/frontendisti/" class="button button--block">
+                        Frontendisti<br />
+                        na&nbsp;Srazech
+                    </a>
+
                 </div>
-            </div>
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-chat.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Pojďte diskutovat<br />
-                            o webovém frontendu!
-                        </h2>
-                        <a href="https://www.facebook.com/frontendisti/" class="btn btn--icon btn--icon--facebook">Frontendisti Facebook</a>
-                    </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+
+                    <img src="{{ asset('images/chat.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Pojďte diskutovat o&nbsp;webovém&nbsp;frontendu!
+                    </h2>
+                    <a href="https://www.facebook.com/frontendisti/" class="button button--block">
+                        Frontendisti<br />
+                        na&nbsp;Facebooku
+                    </a>
+
                 </div>
-            </div>
-            <div class="grid__item">
-                <div class="box offset--bottom">
-                    <div class="box__illustration">
-                        <img src="{{ asset('images/box-job.svg') }}" height="80" alt="" class="box__icon" />
-                    </div>
-                    <div class="box__text">
-                        <h2 class="h3 box__title offset--bottom--large">
-                            Hledáte nebo nabízíte práci<br />
-                            v oboru webového frontendu?
-                        </h2>
-                        <a href="https://www.facebook.com/groups/frontendistiprace/" class="btn btn--icon btn--icon--facebook">Frontend práce na Facebooku</a>
-                    </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+
+                    <img src="{{ asset('images/work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Hledáte nebo nabízíte práci v&nbsp;oboru webového&nbsp;frontendu?
+                    </h2>
+                    <a href="https://www.facebook.com/groups/frontendistiprace/" class="button button--block">
+                        Frontend práce<br />
+                        na&nbsp;Facebooku
+                    </a>
+
                 </div>
-            </div>
-        </div>
-    </div>
-    {% if data.team|length > 0 %}
-        <div class="container u__text--center">
-            <h2 class="offset--bottom">Organizační štáb</h2>
-            <div class="grid grid--center offset--bottom--larger">
-                {% for member in data.team %}
-                    <div class="grid__item">
-                        <div class="box offset--bottom--large">
-                            <div class="box__illustration">
-                                <img src="{{ image('images/people/' ~ member.image).cropResize(400) }}" alt="{{ member.name }}" class="box__image box__image--round" />
-                            </div>
-                            <div class="box__text">
-                                <h3 class="box__title">
-                                    <strong>{{ member.name|striptags|trim }}</strong>
-                                </h3>
+            </div><!-- .row -->
+        </div><!-- .layout-container -->
+    </section>
+
+    <!-- Humans -->
+    <section class="section typography-text-center">
+        <div class="layout-container">
+
+            {% if data.team|length > 0 %}
+                <h2 class="offset-bottom--large">Organizační štáb</h2>
+
+                <div class="row center-xs offset-bottom--large">
+                    {% for member in data.team %}
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+
+                            <img
+                                src="{{ image('media/people/' ~ member.image).cropResize(150) }}"
+                                srcset="
+                                    {{ image('media/people/' ~ member.image).cropResize(150) }},
+                                    {{ image('media/people/' ~ member.image).cropResize(300) }} 2x
+                                "
+                                width="150"
+                                height="150"
+                                class="typography-image-responsive typography-image-responsive--center
+                                    typography-image-circle"
+                                alt="{{ member.name }}"
+                            />
+                            <h3>{{ member.name|striptags|trim }}</h3>
+                            <ul class="list list--clip typography-text-small">
                                 {% if member.position|length > 0 %}
-                                    <div class="u__text--small">
+                                    <li class="list__item">
                                         {{ member.position|raw }}
-                                    </div>
+                                    </li>
                                 {% endif %}
                                 {% if member.email|length > 0 %}
-                                    <div class="u__text--smaller">
-                                        E:&nbsp;<a href="mailto:{{ member.email|striptags|trim }}" target="_blank">{{ member.email|striptags|trim }}</a>
-                                    </div>
+                                    <li class="list__item">
+                                        <a href="mailto:{{ member.email|striptags|trim }}">
+                                            {{ member.email|striptags|trim }}
+                                        </a>
+                                    </li>
                                 {% endif %}
                                 {% if member.twitter|length > 0 %}
-                                    <div class="u__text--smaller">
-                                        <a href="https://twitter.com/{{ member.twitter|striptags|trim }}" target="_blank">@{{ member.twitter|striptags|trim }}</a>
-                                    </div>
+                                    <li class="list__item">
+                                        <a
+                                            href="https://twitter.com/{{ member.twitter|striptags|trim }}"
+                                            target="_blank"
+                                        >
+                                            @{{ member.twitter|striptags|trim }}
+                                        </a>
+                                    </li>
                                 {% endif %}
-                            </div>
+                            </ul>
+
                         </div>
-                    </div>
-                {% endfor %}
-                <div class="grid__item grid__item--wide">
-                    <p>Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinovi Michálkovi na <a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a></p>
-                </div>
-            </div>
-        </div>
-    {% endif %}
+                    {% endfor %}
+                </div><!-- .row -->
+            {% endif %}
+
+            <p>
+                Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinu Michálkovi
+                na&nbsp;<a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>.
+            </p>
+
+        </div><!-- .layout-container -->
+    </section>
 {% endblock %}

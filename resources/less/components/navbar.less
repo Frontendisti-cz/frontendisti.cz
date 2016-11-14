@@ -1,29 +1,16 @@
 .navbar {
-    height: @navbar-height;
     width: 100%;
+    height: @navbar-height;
     background-color: #fff;
-    z-index: 9999;
-
-    &__inner {
-        height: 100%;
-
-        &__section {
-            float: left;
-            width: 50%;
-
-            &--right {
-                float: right;
-            }
-        }
-    }
 
     &--fixed {
         position: fixed;
-        top: 0;
         left: 0;
-    }
-
-    @media (min-width: @screen-tablet) {
-        height: @navbar-height-desktop;
+        top: 0;
+        z-index: 9999;
+        box-shadow:
+            0 6px 10px 0 fade(#000, 10%),
+            0 1px 0 -2px fade(#000, 2%),
+            0 1px 5px 1px fade(#000, 20%);
     }
 }

@@ -1,20 +1,65 @@
-// Colours
-@brand-primary: #ff9900;
-@brand-primary-darker: darken(@brand-primary, 3%);
-@brand-alt: #16263b;
-@brand-alt-dark: darken(@brand-alt, 20%);
-@brand-grey: #E6E6E6;
-@brand-grey-dark: darken(@brand-grey, 20%);
+// Colors
+@color-gray-darker: #2b2b2b;
+@color-gray-dark: #444;
+@color-gray: #555;
+@color-gray-light: #999;
+@color-gray-lighter: #e6e6e6;
+
+@color-brand-blue: #16263b;
+@color-brand-orange: #ff9900;
+@color-brand-gray: @color-gray-darker;
+
+@color-brand-primary: @color-brand-blue;
+@color-brand-accent: @color-brand-orange;
 
 // Layout
-@screen-phablet: 570px;
-@screen-tablet: 768px;
-@screen-desktop: 1024px;
-@screen-large: 1400px;
+// Values should match Flexboxgrid's breakpoints.
+@layout-screen-xs: 30em;
+@layout-screen-sm: 48em;
+@layout-screen-md: 64em;
+@layout-screen-lg: 75em;
 
-// Misc
-@navbar-height: 80px;
-@navbar-height-desktop: 100px;
+// Typography
+// Modular scale
+// Base: 16px
+// Ratio: 1.25
+// @url http://www.modularscale.com/?16&px&1.25&web&text
+@typography-font-size: 16px;
+@typography-font-size-desktop: 19px;
+@typography-modular-scale-ratio: 1.25;
+@typography-line-height: 1.75;
 
-@font-size: 16px;
-@font-size-desktop: 20px;
+@typography-font-size-h1: 1rem * pow(@typography-modular-scale-ratio, 3);
+@typography-font-size-h1-tablet: 1rem * pow(@typography-modular-scale-ratio, 4);
+@typography-font-size-h1-desktop: 1rem * pow(@typography-modular-scale-ratio, 5);
+@typography-font-size-h2: 1rem * pow(@typography-modular-scale-ratio, 2);
+@typography-font-size-h3: 1rem * pow(@typography-modular-scale-ratio, 1);
+@typography-font-size-h4: 1rem;
+@typography-font-size-small: 1rem / @typography-modular-scale-ratio;
+
+@typography-text-color: @color-brand-gray;
+
+// Button
+@button-default-color: #fff;
+@button-default-bg: @color-brand-gray;
+@button-default-color-hover: #fff;
+@button-default-bg-hover: darken(@color-brand-gray, 10%);
+
+@button-primary-color: #fff;
+@button-primary-bg: @color-brand-accent;
+@button-primary-color-hover: #fff;
+@button-primary-bg-hover: darken(@color-brand-accent, 10%);
+
+// Cover
+@cover-tile-projected-width: 45px;
+@cover-tile-projected-height: @cover-tile-projected-width * 1.75;
+@cover-tile-color: @color-brand-blue;
+@cover-tile-color-light: lighten(@cover-tile-color, 6%);
+@cover-tile-color-dark: darken(@cover-tile-color, 6%);
+
+// Navbar
+@navbar-height: 3rem * @typography-line-height;
+
+// Navigation
+@navigation-link-color: @color-gray-light;
+@navigation-link-color-hover: @color-brand-gray;

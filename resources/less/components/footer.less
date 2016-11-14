@@ -1,33 +1,25 @@
 .footer {
-    background-color: @brand-grey;
-    text-align: center;
+    color: @color-gray-light;
+    background-color: @color-brand-gray;
 
-    &__content {
-        padding: 4%;
+    &__accent {
+        color: #fff;
     }
 
-    &__wr__section {
-        padding: 2% 6%;
+    &__divider {
+        width: 3em;
+        margin: 1.25rem auto;
+        border-top: 1px solid @color-gray-light;
     }
 
-    @media (min-width: @screen-desktop) {
-        &__wr {
-            display: flex;
-            text-align: left;
+    a {
+        color: @color-gray-lighter;
+        border-bottom-color: @color-gray-lighter;
 
-            &__section {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                width: 50%;
-                float: left;
-
-                &--right {
-                    justify-content: flex-start;
-                    margin-left: -1px;
-                    border-left: 1px solid @brand-grey-dark;
-                }
-            }
+        &:hover,
+        &:focus {
+            color: #fff;
+            border-bottom-color: #fff;
         }
     }
 }

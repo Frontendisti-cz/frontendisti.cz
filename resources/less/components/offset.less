@@ -1,45 +1,33 @@
 .offset {
-    &--none {
-        margin: 0;
-    }
-
-    &--left {
-        margin-left: 1ex;
-    }
-
-    &--right {
-        margin-right: 1ex;
-    }
-
-    &--bottom {
-        margin-bottom: 1rem;
+    &-bottom {
+        margin-bottom: 1rem * @typography-line-height;
 
         &--small {
-            margin-bottom: .5rem;
+            margin-bottom: .5rem * @typography-line-height;
         }
 
         &--large {
-            margin-bottom: 2rem;
+            margin-bottom: 2rem * @typography-line-height;
         }
 
         &--larger {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem * @typography-line-height;
         }
     }
 
-    &--top {
-        margin-top: 1rem;
+    &-top {
+        margin-top: 1rem * @typography-line-height;
 
         &--small {
-            margin-top: .5rem;
+            margin-top: .5rem * @typography-line-height;
         }
 
         &--large {
-            margin-top: 2rem;
+            margin-top: 2rem * @typography-line-height;
         }
 
         &--larger {
-            margin-top: 4rem;
+            margin-top: 3rem * @typography-line-height;
         }
     }
 }
