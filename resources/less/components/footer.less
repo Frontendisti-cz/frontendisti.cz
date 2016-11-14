@@ -1,9 +1,18 @@
 .footer {
     padding-top: 2rem * @typography-line-height;
     padding-bottom: 2rem * @typography-line-height;
-    text-align: center;
     color: @color-gray-light;
-    background-color: @color-gray-darker;
+    background-color: @color-brand-gray;
+
+    &__accent {
+        color: #fff;
+    }
+
+    &__divider {
+        width: 3em;
+        margin: 1.25rem auto;
+        border-top: 1px solid @color-gray-light;
+    }
 
     a {
         color: @color-gray-lighter;
