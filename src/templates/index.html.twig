@@ -2,7 +2,7 @@
 
 {% block sublayout %}
     <!-- Introduction -->
-    <div class="cover offset-bottom--large">
+    <section class="cover">
         <div class="layout-container">
 
             <div class="typography-text-accent offset-bottom">
@@ -54,7 +54,7 @@
             </div>
 
         </div><!-- .layout-container -->
-    </div><!-- .cover -->
+    </section><!-- .cover -->
 
     <!-- Recent Event's Videos -->
     {% set lastvideo = false %}
@@ -62,147 +62,153 @@
         {% if event.speakers[0].youtube_id|length > 0 and lastvideo == false %}
             {% set lastvideo = true %}
 
-            <div class="layout-container">
-                <h2>{{ event.title|striptags|trim|raw }}</h2>
-                <p>
-                    {{ event.description|raw }}
-                </p>
-            </div><!-- .layout-container -->
+            <section class="section">
+                <div class="layout-container">
+                    <h2>{{ event.title|striptags|trim|raw }}</h2>
+                    <p>
+                        {{ event.description|raw }}
+                    </p>
+                </div><!-- .layout-container -->
 
-            <div class="layout-container layout-container--expand-xs">
-                <div class="row">
-                    {% for speaker in event.speakers %}
-                        <div class="col-xs-12 col-md">
+                <div class="layout-container layout-container--expand-xs">
+                    <div class="row">
+                        {% for speaker in event.speakers %}
+                            <div class="col-xs-12 col-md">
 
-                            <div class="video offset-bottom">
-                                <iframe
-                                    src="https://www.youtube.com/embed/{{ speaker.youtube_id }}"
-                                    class="video__player"
-                                    allowfullscreen
-                                    frameborder="0"
-                                ></iframe>
+                                <div class="video offset-bottom">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/{{ speaker.youtube_id }}"
+                                        class="video__player"
+                                        allowfullscreen
+                                        frameborder="0"
+                                    ></iframe>
+                                </div>
+
                             </div>
+                        {% endfor %}
+                    </div><!-- .row -->
+                    <div class="row center-xs typography-text-center">
+                        <div class="col-xs-10 col-sm-6 col-md-4">
+
+                            <a
+                                href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
+                                class="button button--primary button--block offset-bottom"
+                            >
+                                Frontendisti<br />
+                                na YouTube
+                            </a>
 
                         </div>
-                    {% endfor %}
-                </div><!-- .row -->
-                <div class="row center-xs typography-text-center offset-top offset-bottom--larger">
-                    <div class="col-xs-10 col-sm-6 col-md-4">
-
-                        <a
-                            href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
-                            class="button button--primary button--block offset-bottom"
-                        >
-                            Frontendisti<br />
-                            na YouTube
-                        </a>
-
-                    </div>
-                </div><!-- .row -->
-            </div><!-- .layout-container -->
+                    </div><!-- .row -->
+                </div><!-- .layout-container -->
+            </section>
         {% endif %}
     {% endfor %}
 
     <!-- CTAs -->
-    <div class="layout-container layout-container--expand-xs typography-text-center offset-bottom--large">
-        <div class="row center-xs bottom-sm">
-            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+    <section class="section typography-text-center">
+        <div class="layout-container layout-container--expand-xs">
+            <div class="row center-xs bottom-sm">
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/group_work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
-                <h2 class="typography-h3 offset-bottom">
-                    Nenechte si ujít<br class="typography-hidden-xs" />
-                    další&nbsp;sraz!
-                </h2>
-                <a href="http://srazy.info/frontendisti/" class="button button--block">
-                    Frontendisti<br />
-                    na&nbsp;Srazech
-                </a>
+                    <img src="{{ asset('images/group_work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Nenechte si ujít<br class="typography-hidden-xs" />
+                        další&nbsp;sraz!
+                    </h2>
+                    <a href="http://srazy.info/frontendisti/" class="button button--block">
+                        Frontendisti<br />
+                        na&nbsp;Srazech
+                    </a>
 
-            </div>
-            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/chat.svg') }}" height="80" class="typography-hidden-xs" alt="" />
-                <h2 class="typography-h3 offset-bottom">
-                    Pojďte diskutovat o&nbsp;webovém&nbsp;frontendu!
-                </h2>
-                <a href="https://www.facebook.com/frontendisti/" class="button button--block">
-                    Frontendisti<br />
-                    na&nbsp;Facebooku
-                </a>
+                    <img src="{{ asset('images/chat.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Pojďte diskutovat o&nbsp;webovém&nbsp;frontendu!
+                    </h2>
+                    <a href="https://www.facebook.com/frontendisti/" class="button button--block">
+                        Frontendisti<br />
+                        na&nbsp;Facebooku
+                    </a>
 
-            </div>
-            <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 offset-bottom--large">
 
-                <img src="{{ asset('images/work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
-                <h2 class="typography-h3 offset-bottom">
-                    Hledáte nebo nabízíte práci v&nbsp;oboru webového&nbsp;frontendu?
-                </h2>
-                <a href="https://www.facebook.com/groups/frontendistiprace/" class="button button--block">
-                    Frontend práce<br />
-                    na&nbsp;Facebooku
-                </a>
+                    <img src="{{ asset('images/work.svg') }}" height="80" class="typography-hidden-xs" alt="" />
+                    <h2 class="typography-h3 offset-bottom">
+                        Hledáte nebo nabízíte práci v&nbsp;oboru webového&nbsp;frontendu?
+                    </h2>
+                    <a href="https://www.facebook.com/groups/frontendistiprace/" class="button button--block">
+                        Frontend práce<br />
+                        na&nbsp;Facebooku
+                    </a>
 
-            </div>
-        </div><!-- .row -->
-    </div><!-- .layout-container -->
+                </div>
+            </div><!-- .row -->
+        </div><!-- .layout-container -->
+    </section>
 
     <!-- Humans -->
-    {% if data.team|length > 0 %}
-        <div class="layout-container typography-text-center">
+    <section class="section typography-text-center">
+        <div class="layout-container">
 
-            <h2 class="offset-bottom--large">Organizační štáb</h2>
+            {% if data.team|length > 0 %}
+                <h2 class="offset-bottom--large">Organizační štáb</h2>
 
-            <div class="row center-xs offset-bottom--large">
-                {% for member in data.team %}
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="row center-xs offset-bottom--large">
+                    {% for member in data.team %}
+                        <div class="col-xs-6 col-sm-4 col-md-3">
 
-                        <img
-                            src="{{ image('media/people/' ~ member.image).cropResize(150) }}"
-                            srcset="
-                                {{ image('media/people/' ~ member.image).cropResize(150) }},
-                                {{ image('media/people/' ~ member.image).cropResize(300) }} 2x
-                            "
-                            width="150"
-                            height="150"
-                            class="typography-image-responsive typography-image-responsive--center
-                                typography-image-circle"
-                            alt="{{ member.name }}"
-                        />
-                        <h3>{{ member.name|striptags|trim }}</h3>
-                        <ul class="list list--clip typography-text-small">
-                            {% if member.position|length > 0 %}
-                                <li class="list__item">
-                                    {{ member.position|raw }}
-                                </li>
-                            {% endif %}
-                            {% if member.email|length > 0 %}
-                                <li class="list__item">
-                                    <a href="mailto:{{ member.email|striptags|trim }}">
-                                        {{ member.email|striptags|trim }}
-                                    </a>
-                                </li>
-                            {% endif %}
-                            {% if member.twitter|length > 0 %}
-                                <li class="list__item">
-                                    <a
-                                        href="https://twitter.com/{{ member.twitter|striptags|trim }}"
-                                        target="_blank"
-                                    >
-                                        @{{ member.twitter|striptags|trim }}
-                                    </a>
-                                </li>
-                            {% endif %}
-                        </ul>
+                            <img
+                                src="{{ image('media/people/' ~ member.image).cropResize(150) }}"
+                                srcset="
+                                    {{ image('media/people/' ~ member.image).cropResize(150) }},
+                                    {{ image('media/people/' ~ member.image).cropResize(300) }} 2x
+                                "
+                                width="150"
+                                height="150"
+                                class="typography-image-responsive typography-image-responsive--center
+                                    typography-image-circle"
+                                alt="{{ member.name }}"
+                            />
+                            <h3>{{ member.name|striptags|trim }}</h3>
+                            <ul class="list list--clip typography-text-small">
+                                {% if member.position|length > 0 %}
+                                    <li class="list__item">
+                                        {{ member.position|raw }}
+                                    </li>
+                                {% endif %}
+                                {% if member.email|length > 0 %}
+                                    <li class="list__item">
+                                        <a href="mailto:{{ member.email|striptags|trim }}">
+                                            {{ member.email|striptags|trim }}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                {% if member.twitter|length > 0 %}
+                                    <li class="list__item">
+                                        <a
+                                            href="https://twitter.com/{{ member.twitter|striptags|trim }}"
+                                            target="_blank"
+                                        >
+                                            @{{ member.twitter|striptags|trim }}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
 
-                    </div>
-                {% endfor %}
-            </div><!-- .row -->
-        {% endif %}
+                        </div>
+                    {% endfor %}
+                </div><!-- .row -->
+            {% endif %}
 
-        <p class="offset-bottom--large">
-            Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinu Michálkovi
-            na&nbsp;<a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>.
-        </p>
+            <p>
+                Pokud vás zajímá možnost sponzorství Frontendisti.cz, pište Martinu Michálkovi
+                na&nbsp;<a href="mailto:martin@vzhurudolu.cz">martin@vzhurudolu.cz</a>.
+            </p>
 
-    </div><!-- .layout-container -->
+        </div><!-- .layout-container -->
+    </section>
 {% endblock %}
