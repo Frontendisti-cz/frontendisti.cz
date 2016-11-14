@@ -2,89 +2,142 @@
 
 {% block title %}Archiv akcí | Frontendisti.cz{% endblock %}
 
-{% block description %}Archiv minikonferencí webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.{% endblock %}
+{% block description -%}
+    Archiv minikonferencí webových designérů a vývojářů orientovaných na HTML, CSS a trochu JavaScript.
+{%- endblock %}
 
 {% block sublayout %}
     <div class="layout-container">
-        <h1 class="offset--bottom">Archiv akcí</h1>
+        <h1 class="typography-h2 offset-top--large offset-bottom--large">Archiv akcí</h1>
     </div>
+
     {% for event in data.events|reverse %}
-        <div class="event">
-            <div class="layout-container offset--bottom--large">
-                <h2 class="offset--top--large offset--bottom"><a href="#{{ event.slug|striptags|trim }}" id="{{ event.slug|striptags|trim }}" class="u__link-unstyled">{{ event.title|striptags|trim }}</a></h2>
-                <div class="offset--bottom--large">
+        <section class="section typography-text-center">
+            <div class="layout-container">
+
+                <h2>
+                    <a href="#{{ event.slug|striptags|trim }}" id="{{ event.slug|striptags|trim }}" class="typography-link-unstyled">
+                        {{ event.title|raw }}
+                    </a>
+                </h2>
+                <p class="offset-bottom--large">
                     {{ event.description|raw }}
-                </div>
-                <div class="grid grid--center offset--bottom--larger u__text--center">
+                </p>
+
+                {# Speakers #}
+                <div class="row center-xs typography-text-center">
                     {% for speaker in event.speakers %}
-                        {% set columns = '' %}
-                        {% if loop.length == 4 %}
-                            {% set columns = 'grid__item--quarter' %}
-                        {% endif %}
-                        <div class="grid__item {{ columns }}">
-                            <div class="box offset--bottom--large">
-                                {% if speaker.image|length > 0 %}
-                                    <div class="box__illustration">
-                                        <img src="{{ image('images/people/' ~ speaker.image).cropResize(400) }}" alt="{{ speaker.name }}" class="box__image box__image--round" />
-                                    </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 offset-bottom--large">
+
+                            {% if speaker.image|length > 0 %}
+                                <img
+                                    src="{{ image('media/people/' ~ speaker.image).cropResize(150) }}"
+                                    srcset="
+                                        {{ image('media/people/' ~ speaker.image).cropResize(150) }},
+                                        {{ image('media/people/' ~ speaker.image).cropResize(300) }} 2x
+                                    "
+                                    width="150"
+                                    height="150"
+                                    class="typography-image-responsive typography-image-responsive--center
+                                        typography-image-circle"
+                                    alt="{{ speaker.name }}"
+                                />
+                            {% endif %}
+
+                            <h3 class="typography-h4">
+                                <strong>
+                                    {% if speaker.name_link|length > 0 %}
+                                        <a href="{{ speaker.name_link }}" target="_blank">
+                                            {{ speaker.name|striptags|trim }}
+                                        </a>
+                                    {% else %}
+                                        {{ speaker.name|striptags|trim }}
+                                    {% endif %}
+                                </strong>
+                                {% if speaker.company|length > 0 %}
+                                    <br />
+                                    {% if speaker.company_link|length > 0 %}
+                                        <a
+                                            href="{{ speaker.company_link }}"
+                                            target="_blank"
+                                            class="typography-link-unstyled"
+                                        >
+                                            @&nbsp;{{ speaker.company|striptags|trim }}
+                                        </a>
+                                    {% else %}
+                                        @&nbsp;{{ speaker.company|striptags|trim }}
+                                    {% endif %}
                                 {% endif %}
-                                <div class="box__text">
-                                    <h3 class="box__title">
-                                        <strong>
-                                            {% if speaker.name_link|length > 0 %}
-                                                <a href="{{ speaker.name_link }}" target="_blank">{{ speaker.name|striptags|trim }}</a>
-                                            {% else %}
-                                                {{ speaker.name|striptags|trim }}
-                                            {% endif %}
-                                        </strong>
-                                        {% if speaker.company|length > 0 %}
-                                            {% if speaker.company_link|length > 0 %}
-                                                <a href="{{ speaker.company_link }}" target="_blank" class="u__clear-link">@&nbsp;{{ speaker.company|striptags|trim }}</a>
-                                            {% else %}
-                                                @&nbsp;{{ speaker.company|striptags|trim }}
-                                            {% endif %}
-                                        {% endif %}
-                                    </h3>
-                                    {% if speaker.title|length > 0 %}
-                                        <h4 class="box__subtitle">{{ speaker.title|raw }}</h4>
-                                    {% endif %}
-                                    {% if speaker.youtube_id|length > 0 %}
-                                        <div class="u__text--smaller">
-                                            <a href="https://youtu.be/{{ speaker.youtube_id|striptags|trim }}" target="_blank">Video z přednášky</a>
-                                        </div>
-                                    {% endif %}
-                                    {% if speaker.presentation|length > 0 %}
-                                        <div class="u__text--smaller">
-                                            <a href="{{ speaker.presentation|striptags|trim }}" target="_blank">Prezentace</a>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            </div>
+                            </h3>
+
+                            <ul class="list list--clip typography-text-small">
+                                {% if speaker.title|length > 0 %}
+                                    <li class="list__item">
+                                        <strong>{{ speaker.title|raw }}</strong>
+                                    </li>
+                                {% endif %}
+                                {% if speaker.youtube_id|length > 0 %}
+                                    <li class="list__item">
+                                        <a
+                                            href="https://youtu.be/{{ speaker.youtube_id|striptags|trim }}"
+                                            target="_blank"
+                                        >
+                                            Video z&nbsp;přednášky
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                {% if speaker.presentation|length > 0 %}
+                                    <li class="list__item">
+                                        <a href="{{ speaker.presentation|striptags|trim }}" target="_blank">
+                                            Prezentace
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+
                         </div>
                     {% endfor %}
-                    {% if event.more_links|length > 0 %}
-                        <div class="grid__item grid__item--wide">
-                            {% for link in event.more_links %}
-                                <div class="u__text--smaller">
-                                    <a href="{{ link.url|striptags|trim }}" target="_blank">{{ link.title }}</a>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
-                    {% if event.partners|length > 0 %}
-                        <div class="grid__item grid__item--all offset--top offset--bottom--small">
-                            {{ event.partners_title|striptags|trim }}
-                        </div>
+                </div><!-- .row -->
+
+                {# Links #}
+                {% if event.more_links|length > 0 %}
+                    <ul class="list typography-text-small offset-bottom--large">
+                        {% for link in event.more_links %}
+                            <li>
+                                <a href="{{ link.url|striptags|trim }}" target="_blank">{{ link.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {# Partners #}
+                {% if event.partners|length > 0 %}
+                    <h3 class="typography-h4 offset-bottom">
+                        {{ event.partners_title|striptags|trim }}
+                    </h3>
+                    <div class="row center-xs middle-xs">
                         {% for partner in event.partners %}
-                            <div class="grid__item grid__item--quarter grid__item--center">
-                                <a href="{{ partner.url }}" target="_blank" title="{{ partner.title }}" class="u__clear-link">
-                                    <img src="{{ image('images/partners/' ~ partner.image).cropResize(200) }}" alt="{{ partner.title }}">
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+
+                                <a href="{{ partner.url }}" target="_blank" title="{{ partner.title }}" class="typography-link-unstyled">
+                                    <img
+                                        src="{{ image('media/partners/' ~ partner.image).cropResize(120) }}"
+                                        srcset="
+                                            {{ image('media/partners/' ~ partner.image).cropResize(120) }},
+                                            {{ image('media/partners/' ~ partner.image).cropResize(240) }} 2x
+                                        "
+                                        width="120"
+                                        class="typography-image-responsive typography-image-responsive--center"
+                                        alt="{{ partner.title }}"
+                                    />
                                 </a>
+
                             </div>
                         {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+                    </div><!-- .row -->
+                {% endif %}
+
+            </div><!-- .layout-container -->
+        </section>
     {% endfor %}
 {% endblock %}

@@ -86,12 +86,12 @@
                         </div>
                     {% endfor %}
                 </div><!-- .row -->
-                <div class="row center-xs typography-text-center offset-bottom--larger">
+                <div class="row center-xs typography-text-center offset-top offset-bottom--larger">
                     <div class="col-xs-10 col-sm-6 col-md-4">
 
                         <a
                             href="https://www.youtube.com/channel/UCxs7KDC0LFOezVujLG_leRw"
-                            class="button button--primary button--block"
+                            class="button button--primary button--block offset-bottom"
                         >
                             Frontendisti<br />
                             na YouTube
@@ -157,13 +157,13 @@
                     <div class="col-xs-6 col-sm-4 col-md-3">
 
                         <img
-                            src="{{ image('media/people/' ~ member.image).cropResize(200) }}"
+                            src="{{ image('media/people/' ~ member.image).cropResize(150) }}"
                             srcset="
-                                {{ image('media/people/' ~ member.image).cropResize(200) }},
-                                {{ image('media/people/' ~ member.image).cropResize(400) }} 2x
+                                {{ image('media/people/' ~ member.image).cropResize(150) }},
+                                {{ image('media/people/' ~ member.image).cropResize(300) }} 2x
                             "
-                            width="200"
-                            height="200"
+                            width="150"
+                            height="150"
                             class="typography-image-responsive typography-image-responsive--center
                                 typography-image-circle"
                             alt="{{ member.name }}"
