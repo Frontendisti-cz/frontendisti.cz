@@ -1,25 +1,29 @@
 <div class="navbar navbar--fixed">
-    <div class="layout-container layout-container--fluid navbar__inner">
+    <div class="layout-container layout-container--fluid">
+        <div class="row">
+            <div class="col-xs-6">
 
-        <div class="navbar__inner__section">
-            <a href="{{ path('index') }}" class="logo typography-link-unstyled">
-                <img
-                    src="{{ asset('images/logo.svg') }}"
-                    height="30"
-                    class="logo__image"
-                    alt="Frontendisti.cz"
-                />
-            </a>
-        </div>
-        <div class="navbar__inner__section navbar__inner__section--right">
-            <nav class="navigation">
-                {% if page != 'index' %}
-                    <a href="{{ path('index') }}" class="navigation__link">&lsaquo; Domů</a>
-                {% else %}
-                    <a href="{{ path('archive') }}" class="navigation__link">Archiv akcí</a>
-                {% endif %}
-            </nav>
-        </div>
+                <a href="{{ path('index') }}" class="logo typography-link-unstyled">
+                    <img
+                        src="{{ asset('images/logo.svg') }}"
+                        height="30"
+                        class="logo__image"
+                        alt="Frontendisti.cz"
+                    />
+                </a>
 
+            </div>
+            <div class="col-xs-6">
+
+                <nav class="navigation">
+                    {% if page != 'index' %}
+                        <a href="{{ path('index') }}" class="navigation__link">&lsaquo; Domů</a>
+                    {% else %}
+                        <a href="{{ path('archive') }}" class="navigation__link">Archiv akcí</a>
+                    {% endif %}
+                </nav>
+
+            </div>
+        </div><!-- .row -->
     </div><!-- .layout-container -->
 </div>
