@@ -31,10 +31,10 @@
 
                             {% if speaker.image|length > 0 %}
                                 <img
-                                    src="{{ image('media/people/' ~ speaker.image).cropResize(150) }}"
+                                    src="{{ image('media/people/' ~ speaker.image).zoomCrop(150, 150) }}"
                                     srcset="
-                                        {{ image('media/people/' ~ speaker.image).cropResize(150) }},
-                                        {{ image('media/people/' ~ speaker.image).cropResize(300) }} 2x
+                                        {{ image('media/people/' ~ speaker.image).zoomCrop(150, 150) }},
+                                        {{ image('media/people/' ~ speaker.image).zoomCrop(300, 300) }} 2x
                                     "
                                     width="150"
                                     height="150"
