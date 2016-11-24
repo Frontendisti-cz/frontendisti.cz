@@ -748,3 +748,52 @@
     more_links:
             -   title: Všechny přednášky v&nbsp;playlistu
                 url: https://www.youtube.com/playlist?list=PLnXfazh66kVd87yBmupLBNMlABN0BL-tz
+
+-   id: 22
+    slug: performance-v-prohlizeci
+    title: Performance v&nbsp;prohlížeči
+    description: >
+        Čtvrtek 10.&nbsp;11. 2016, Kiwi.com Brno
+    speakers:
+        -   name: Michal Matuška
+            name_link: https://twitter.com/fireball_
+            image: michal-matuska.jpg
+            company: Superkodéři
+            title: Opravdu víš, co se ti tam děje?
+            youtube_id: TAyp19NBLdA
+        -   name: Miroslav Jančařík &amp;&nbsp;Martin Jurča
+            image: miroslav-jancarik-martin-jurca.jpg
+            company: Seznam.cz
+            title: "Optimalizace JavaScriptového kódu: mýty &amp;&nbsp;praxe."
+            youtube_id: ijayRkP1mc8
+    more_links:
+            -   title: Všechny přednášky v&nbsp;playlistu
+                url: https://www.youtube.com/playlist?list=PLnXfazh66kVd9gbG3uxGEMmibW1R3da7d
+
+#-   id: 23
+#    slug: frontendisti-v-plzni
+#    title: Frontendisti v&nsbp;Plzni
+#    description: >
+#        Středa 23.&nbsp;11. 2016, Depo 2015 Plzeň
+#    speakers:
+#        -   name: Jirka Vyhnálek
+#            name_link: ~
+#            image: ~
+#            company: Socialbakers
+#            title: Vývoj SPA v&nbsp;React +&nbsp;Redux
+#            youtube_id: ~
+#        -   name: Martin Hložek
+#            name_link: https://twitter.com/hloza
+#            image: martin-hlozek.jpg
+#            company: Beneš &&nbsp;Michl
+#            title: Bootstrap – naše cesta tam a&nbsp;zase zpátky
+#            youtube_id: ~
+#        -   name: Vašek Vracovský
+#            name_link: ~
+#            image: ~
+#            company: Shoptet
+#            title: ShoptetLeaks
+#            youtube_id: ~
+#    more_links:
+#            -   title: Všechny přednášky v&nbsp;playlistu
+#                url: ~

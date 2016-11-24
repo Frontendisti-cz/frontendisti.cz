@@ -48,10 +48,10 @@
                                 <strong>
                                     {% if speaker.name_link|length > 0 %}
                                         <a href="{{ speaker.name_link }}" target="_blank">
-                                            {{ speaker.name|striptags|trim }}
+                                            {{ speaker.name|raw }}
                                         </a>
                                     {% else %}
-                                        {{ speaker.name|striptags|trim }}
+                                        {{ speaker.name|raw }}
                                     {% endif %}
                                 </strong>
                                 {% if speaker.company|length > 0 %}
