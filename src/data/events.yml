@@ -27,7 +27,7 @@
 #             youtube_id: yCx_yrsLbKE
 #             presentation: http://www.slideshare.net/SuperKoderi/michalm-stylus
 #    more_links:
-#         -   title: Všechny přednášky v playlistu
+#         -   title: Všechny přednášky v&nbsp;playlistu
 #             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfrUeChLakQwaXiXvoK15B7
 #         -   title: Moderovaná diskuze na téma CSS preprocesory
 #             url: https://www.youtube.com/watch?v=yywYWab89NE
@@ -44,7 +44,7 @@
     slug: preprocesory
     title: CSS preprocesory
     description: >
-         Pátek 21. 2. 2014, Klub cestovatelů, Praha
+         Pátek 21.&nbsp;2. 2014, Klub cestovatelů, Praha
     speakers:
          -   name: Martin Michálek
              name_link: https://twitter.com/machal
@@ -68,7 +68,7 @@
              youtube_id: yCx_yrsLbKE
              presentation: http://www.slideshare.net/SuperKoderi/michalm-stylus
     more_links:
-         -   title: Všechny přednášky v playlistu
+         -   title: Všechny přednášky v&nbsp;playlistu
              url: https://www.youtube.com/playlist?list=PLnXfazh66kVfrUeChLakQwaXiXvoK15B7
 #         -   title: Moderovaná diskuze na téma CSS preprocesory
 #             url: https://www.youtube.com/watch?v=yywYWab89NE
@@ -76,13 +76,13 @@
     slug: newslettery
     title: Kódování newsletterů
     description: >
-        Středa 26. 3. 2014, Kavárna Kunšátská Trojka, Brno
+        Středa 26.&nbsp;3. 2014, Kavárna Kunšátská Trojka, Brno
     speakers:
         -   name: Tomáš Krejčí
             name_link: https://twitter.com/tomkrej
             image: tomas-krejci.jpg
             company: SuperKoderi.cz
-            title: Kódování HTML e-mailů a newsletterů
+            title: Kódování HTML e-mailů a&nbsp;newsletterů
             youtube_id: mUBOX7-ohqw
             presentation: http://www.slideshare.net/dwight99/kdovn-html-email-a-newsletter
         -   name: Jan Štráfelda
@@ -96,11 +96,11 @@
             name_link: https://twitter.com/TaCcz
             image: tomas-hejc.jpg
             company: SuperKoderi.cz
-            title: Užitečné zdroje a nástroje pro tvorbu HTML e-mailů
+            title: Užitečné zdroje a&nbsp;nástroje pro tvorbu HTML e-mailů
             youtube_id: iLxTNRVGWvo
             presentation: http://www.slideshare.net/SuperKoderi/frontendisti-prezentace
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcXGTWV1Fx2K-5i53nktdLw<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-26-3-2014-brno-k-dov-n
@@ -108,7 +108,7 @@
     slug: organizace
     title: Organizace kódu
     description: >
-        Pátek 25.4. 2014, Restaurace V. R. Levský, Ostrava
+        Pátek 25.&nbsp;4. 2014, Restaurace V.&nbsp;R. Levský, Ostrava
     speakers:
         -   name: Patrik Illy
             name_link: https://twitter.com/illycz
@@ -121,18 +121,18 @@
             name_link: https://twitter.com/kozleek
             image: tomas-musiol.jpg
             company: Freelancer
-            title: BEM &amp; Preprocesory (SASS)
+            title: BEM &amp;&nbsp;Preprocesory (SASS)
             youtube_id: xzB-tMR1IcY
             presentation: https://speakerdeck.com/kozleek/bem-and-preprocesory-sass
         -   name: Robin Pokorný
             name_link: https://twitter.com/robinpokorny
             image: robin-pokorny.jpg
             company: LMC, s.r.o.
-            title: Organizace kódu v týmu
+            title: Organizace kódu v&nbsp;týmu
             youtube_id: Eda7dYUJXd0
             presentation: http://www.slideshare.net/robinpokorny/robinova-organizace-kodu
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVejEaZgbjV0nkmJ_gS3V7A1<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-organizace-kodu
@@ -140,7 +140,7 @@
     slug: ux
     title: UX
     description: >
-        Pátek 30. 5. 2014, Era svět Jungmannovo náměstí 767, Praha 1
+        Pátek 30.&nbsp;5. 2014, Era svět Praha
     speakers:
         -   name: Jirka Sekera
             name_link: https://twitter.com/signalizer
@@ -161,7 +161,7 @@
             title: Taaaalk!
             youtube_id: aOfiXs8w_fQ
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfJIVCOqWV3Mxoi9NRO75oG
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-ux
@@ -174,9 +174,9 @@
              image: logoheurekaclaimrgb-250x75.png
 -   id: 5
     slug: frameworky
-    title: Front-end frameworky v Brně
+    title: Front-end frameworky v&nbsp;Brně
     description: >
-        Čtvrtek 26. 6. 2014, Restaurace STARÁ TKALCOVNA, Brno
+        Čtvrtek 26.&nbsp;6. 2014, Restaurace STARÁ TKALCOVNA, Brno
     speakers:
         -   name: Adam Kudrna
             name_link: https://twitter.com/AdamKudrna
@@ -200,7 +200,7 @@
             youtube_id: 2mvbyRdM_Wk
             presentation: http://prednaska-frameworky2014.superkoderi.cz
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: http://www.youtube.com/playlist?list=PLnXfazh66kVdsq88BcTL-luM-Rr3EsVBM<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/css_frameworky<br/>
@@ -213,9 +213,9 @@
              image: logoheurekaclaimrgb-250x75.png
 -   id: 6
     slug: rwd-media
-    title: Responzivní média v Ostravě
+    title: Responzivní média v&nbsp;Ostravě
     description: >
-        Pátek 26. 9. 2014, Viva Ostrava, Ostrava
+        Pátek 26.&nbsp;9. 2014, Viva Ostrava
     speakers:
     -   name: Robin Pokorný
         name_link: https://twitter.com/robinpokorny
@@ -228,7 +228,7 @@
         name_link: https://twitter.com/machal
         image: martin-michalek.jpg
         company: Freelancer
-        title: Responzivní obrázky v praxi
+        title: Responzivní obrázky v&nbsp;praxi
         youtube_id: zsE6caTsi1M
         presentation: http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic/
     -   image: jakub-mikulas.jpg
@@ -237,7 +237,7 @@
         title: Video
         youtube_id: LLmbOVOLGQA
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: http://www.youtube.com/playlist?list=PLnXfazh66kVd_AuG1fVQYWoya4b1NyNeR
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-responzivni-media
@@ -252,15 +252,15 @@
              image: logoheurekaclaimrgb-250x75.png
 -   id: 7
     slug: psd
-    title: PSD či nePSD? v Praze
+    title: PSD či nePSD? v&nbsp;Praze
     description: >
-        Pátek 31. 10. 2014, Node5, Praha
+        Pátek 31.&nbsp;10. 2014, Node&nbsp;5 Praha
     speakers:
         -   name: Michal Maňák
             name_link: https://twitter.com/manakmichal
             image: michal-manak.jpg
             company: GoodData
-            title: Jak v GoodData tvoříme UI
+            title: Jak v&nbsp;GoodData tvoříme UI
             youtube_id: aOZbBkQOOd8
             presentation: http://www.slideshare.net/manakmichal/jak-v-gooddata-tvome-ui
         -   name: Václav Rouček
@@ -274,19 +274,19 @@
             name_link: https://twitter.com/AdamKudrna
             image: adam-kudrna.jpg
             company: Freelancer
-            title: Photoshop v dnešním workflow frontendisty
+            title: Photoshop v&nbsp;dnešním workflow frontendisty
             youtube_id: 6y_GWWHRJN8
             presentation: http://www.slideshare.net/AdamKudrna/photoshop-v-dnenm-workflow-frontendisty
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcYKCxuTxFZdHLDS6YtefWU
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-31102014-praha-psd-ci-nepsd
 -   id: 8
     slug: svg
-    title: SVG v Brně
+    title: SVG v&nbsp;Brně
     description: >
-        Čtvrtek 4. 12. 2014, Webnode Brno
+        Čtvrtek 4.&nbsp;12. 2014, Webnode Brno
     speakers:
         -   name: Jakub Mikuláš
             name_link: https://twitter.com/jedenbod
@@ -299,26 +299,26 @@
             name_link: https://twitter.com/milankacurak
             image: milan-kacurak.jpg
             company: Freelancer
-            title: Animace v SVG
+            title: Animace v&nbsp;SVG
             youtube_id: D8dNpPP1vZg
             presentation: https://docs.google.com/presentation/d/1-vgYbqPIX-R0CG1FPGLC1K-4NZkVV_jiSlonC_IR8lo
         -   name: Michal Matuška
             name_link: https://twitter.com/fireball_
             image: michal-matuska.jpg
             company: SuperKoderi.cz
-            title: SVG – case study <br /> (řešení problémů v reálném projektu)
+            title: SVG – case study <br /> (řešení problémů v&nbsp;reálném projektu)
             youtube_id: pl3qMBqZSgc
             presentation: http://svg.superkoderi.cz/svg.pdf
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcLpo9sIRiPfBzf1VPIaFo8<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-prosinec-2014-svg-v-brne
 -   id: 9
     slug: automatizace
-    title: Automatizace v Ostravě
+    title: Automatizace v&nbsp;Ostravě
     description: >
-        Pátek 6. 2. 2015, Viva Ostrava
+        Pátek 6.&nbsp;2. 2015, Viva Ostrava
     speakers:
         -   name: Tomáš Musiol
             name_link: https://twitter.com/kozleek
@@ -341,15 +341,15 @@
             title: Improvizovaná ukázka devstacku od SuperKodérů
             youtube_id: 3p42lpYcqgE
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfswYfcSqw3oWAzrtMEIM21
 #        -   title: Zvukový záznam z diskuze (25:25 ~ 6.76MB)
 #            url: http://www.frontendisti.cz/?podcast_episode=/uploads/2015/02/Frontendisti.cz_.Diskuze.008-Automatizace.mp3
 -   id: 10
     slug: wp
-    title: WordPress v Praze
+    title: WordPress v&nbsp;Praze
     description: >
-        Čtvrtek 13. 3. 2015, Node5 Praha
+        Čtvrtek 13.&nbsp;3. 2015, Node&nbsp;5 Praha
     speakers:
     -   name: Jan Bien
         name_link: https://twitter.com/HonzaBien
@@ -373,7 +373,7 @@
         youtube_id: U7x4zz12c7U
         presentation: http://www.slideshare.net/borekb/wordpress-jako-pleitost-frontendisti-minikonf-032015
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfjzdmYDKOFf3QyQRTR32-u
     partners_title: Sponzor akce:
     partners:
@@ -382,9 +382,9 @@
              image: logo-cesky-hosting-250x188.png
 -   id: 11
     slug: typografie
-    title: Typografie v Brně
+    title: Typografie v&nbsp;Brně
     description: >
-        Čtvrtek 9. 4. 2015, Webnode Brno
+        Čtvrtek 9.&nbsp;4. 2015, Webnode Brno
     speakers:
         -   name: Petr Skala
             name_link: https://twitter.com/skakalalala
@@ -404,11 +404,11 @@
             name_link: https://twitter.com/pitrdzi
             image: petr-grochal.jpg
             company: SuperKoderi.cz
-            title: Jak pracovat s fonty na front-endu
+            title: Jak pracovat s&nbsp;fonty na front-endu
             youtube_id: CMGJX49vnEk
             presentation: http://www.slideshare.net/SuperKoderi/jak-pracovat-s-fonty-na-front-endu
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcZi-B85f4NdnwTfglHVvRL
     partners_title: Sponzor akce:
     partners:
@@ -419,7 +419,7 @@
     slug: rychlost
     title: Rychlost načítání webů
     description: >
-        Středa 3. 6. 2015, Node 5, Praha
+        Středa 3.&nbsp;6. 2015, Node&nbsp;5 Praha
     speakers:
     -   name: Jan Sládek
         name_link: https://twitter.com/honzasladek
@@ -441,9 +441,9 @@
         title: Critical CSS
         youtube_id: 6x3pSAP-LTo
     more_links:
-        -   title: Blogpost o Critical CSS
+        -   title: Blogpost o&nbsp;Critical CSS
             url: http://www.vzhurudolu.cz/blog/35-critical-css
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVettu7cPG-fePTaAJFFZ9e8
     partners_title: Partneři akce:
     partners:
@@ -458,9 +458,9 @@
             image: logo-jobs.png
 -   id: 13
     slug: semantika
-    title: Sémantika v Brně
+    title: Sémantika v&nbsp;Brně
     description: >
-        Čtvrtek 24. 9. 2015, Webnode, Brno
+        Čtvrtek 24.&nbsp;9. 2015, Webnode Brno
     speakers:
         -   name: Radek Pavlíček
             name_link: https://twitter.com/radlicek
@@ -473,7 +473,7 @@
             name_link: https://twitter.com/pajasevi
             image: pavel-sevcik.jpg
             company: Etnetera
-            title: Microdata a Rich snippets
+            title: Microdata a&nbsp;Rich snippets
             youtube_id: 8Le8HVpzWlM
             presentation: https://docs.google.com/presentation/d/1oRGLvPbW8f4bbuu0TiADLp2a6S1f7s5fDADModXuiOY/edit?usp=sharing
         -   name: Tomáš Bukovský
@@ -484,7 +484,7 @@
             youtube_id: rv_HgfAJRec
             presentation: http://www.slideshare.net/peckadesign/zv-vm-rich-snippety-nvtvnost
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfrJM_7kIczSwxtMkSA5Pfp
     partners_title: Partneři akce:
     partners:
@@ -498,13 +498,13 @@
     slug: prototypovani
     title: Prototypování
     description: >
-        Čtvrtek 15. 10. 2015, Viva Ostrava
+        Čtvrtek 15.&nbsp;10. 2015, Viva Ostrava
     speakers:
         -   name: Jiři Komár
             name_link: https://twitter.com/jirikomar
             image: jiri-komar.jpg
             company: AdVisio
-            title: Dobre jméno Axure RP
+            title: Dobro jméno Axure&nbsp;RP
         -   name: Adam Kudrna
             name_link: https://twitter.com/AdamKudrna
             image: adam-kudrna.jpg
@@ -515,16 +515,16 @@
             name_link: https://twitter.com/raist
             image: petr-stastny.jpg
             company: Freelancer
-            title: Kdo chvíli stál, stojí opodál. A kdo chce flow, jde do Webflow.
+            title: Kdo chvíli stál, stojí opodál. A&nbsp;kdo chce flow, jde do Webflow.
             youtube_id: CFCqP0JkJJ0
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVeB2wEFmY_WVcnS59_PUzpd
 -   id: 15
     slug: reactjs
     title: React.js
     description: >
-        Čtvrtek 19. 11. 2015, Node 5
+        Čtvrtek 19.&nbsp;11. 2015, Node&nbsp;5 Praha
     speakers:
         -   name: David Grudl
             name_link: https://twitter.com/DavidGrudl
@@ -536,7 +536,7 @@
             name_link: https://twitter.com/martinpesout
             image: martin-pesout.png
             company: ContentKing
-            title: React z pohledu UI vývojáře
+            title: React z&nbsp;pohledu UI vývojáře
             youtube_id: Dc9ZC9ObSMk
             presentation: http://www.slideshare.net/MartinPeout/react-z-pohledu-ui-vvoje
         -   name: Robin Pokorný
@@ -547,7 +547,7 @@
             youtube_id: G8fft3H6bG4
             presentation: http://www.slideshare.net/robinpokorny/react-kdyz-odezni-zamilovanost
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVc5-SdhfuC9f8ZsNVyzzcTP
     partners_title: Partneři srazu:
     partners:
@@ -558,7 +558,7 @@
     slug: budoucnost-css
     title: Budoucnost CSS
     description: >
-        Středa 16. 12. 2015, Webnode Brno
+        Středa 16.&nbsp;12. 2015, Webnode Brno
     speakers:
         -   name: Pavel Ševčík
             name_link: https://twitter.com/pajasevi
@@ -571,7 +571,7 @@
             name_link: https://twitter.com/LeZuse
             image: tomas-ruzicka.jpg
             company: Productboard
-            title: CSS Modules &#8211; evoluce BEM a příbuzných
+            title: CSS Modules &#8211; evoluce BEM a&nbsp;příbuzných
             youtube_id: uOKA-tptKUc
             presentation:  https://docs.google.com/presentation/d/1SzOrKjNIOcmTNBdZima3YOlm8WJv4Z4tSrP0P5E1qwc/edit?usp=sharing
         -   name: Milan Kačurák
@@ -582,7 +582,7 @@
             youtube_id: 196lIR4GEWA
             presentation: https://www.kacurak.com/frontendisti/budoucnost-uzivatelskych-rozhrani.pdf
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcWuL02deAAfjEO3AHB15MU
     partners_title: Sponzor akce:
     partners:
@@ -593,7 +593,7 @@
     slug: style-guides
     title: Style Guides
     description: >
-        středa 27. 01. 2016, Node 5 v Praze
+        středa 27.&nbsp;1. 2016, Node&nbsp;5 Praha
     speakers:
         -   name: Martin Staněk
             name_link: https://twitter.com/koucik
@@ -605,7 +605,7 @@
         -   name: Zdeněk Lanc
             name_link: https://twitter.com/ZdenekLanc
             image: zdenek-lanc.jpg
-            title: Atomic Design v České televizi
+            title: Atomic Design v&nbsp;České televizi
             youtube_id: wgsHfAV-6Aw
         -   name: Martin Krištof
             name_link: https://twitter.com/Krejcek
@@ -614,7 +614,7 @@
             title: Budoucnost uživatelských rozhraní
             youtube_id: 8nVoafsc0PQ
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfabxlsz0yzYjx-_zqzl7Jc
     partners_title: Sponzor akce:
     partners:
@@ -625,7 +625,7 @@
     slug: kvalita-kodu
     title: Kvalita kódu
     description: >
-        <strong>Sedmnáctý brněnský sraz</strong>: čtvrtek 17. 3. 2016, Kentico Brno
+        <strong>Sedmnáctý brněnský sraz</strong>: čtvrtek 17.&nbsp;3. 2016, Kentico Brno
     speakers:
         -   image: jan-opavsky.jpg
             name: Ján Opavský
@@ -642,11 +642,11 @@
         -   image: bartunek-mikula.jpg
             name: Jan Bartůněk + Jan Mikula
             company: Salsita Software
-            title: Code reviews, proč je dělat a jak na ně?
+            title: Code reviews, proč je dělat a&nbsp;jak na&nbsp;ně?
             youtube_id: H388-dT4uO0
             presentation: https://docs.google.com/presentation/d/1J0T1GAzSEJ-Cos19mzbUW1_XjEVXlu50uxlhcoPa5QI/edit#slide=id.g1202c8c613_0_110
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVedHvoIQY-wDG15e9QQR52V
     partners_title: Partneři srazu:
     partners:
@@ -660,13 +660,13 @@
     slug: marketing
     title: Marketing
     description: >
-        <strong>Osmnáctý pražský sraz</strong>: úterý 26. 4. 2016, LMC Praha
+        <strong>Osmnáctý pražský sraz</strong>: úterý 26.&nbsp;4. 2016, LMC Praha
     speakers:
         -   name: Filip Podstavec
             name_link: https://twitter.com/filippodstavec
             image: filip-podstavec.jpg
             company: Marketingminer.com
-            title: Vyhledávače a skrytý obsah
+            title: Vyhledávače a&nbsp;skrytý obsah
             youtube_id: 24lTbqeyzTw
             presentation: http://www.slideshare.net/Shadymen/frontendisti-prezentace-61704626
         -   name: Pavel Ungr
@@ -687,11 +687,11 @@
             name_link: https://twitter.com/jantichy
             image: jan-tichy.jpg
             company: Medio Interactive
-            title: Vyhledávače a Javascript
+            title: Vyhledávače a&nbsp;Javascript
             youtube_id: kU_M1elyunw
             presentation: http://www.slideshare.net/mediocz/seo-ve-svete-java-scriptu
     more_links:
-        -   title: Všechny přednášky v playlistu
+        -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVdUHIXJoZmvrw9CGW4vsnvU
     partners_title: Partneři srazu:
     partners:
@@ -700,9 +700,9 @@
             image: LMC_small_logo_RGB_100-250x97.png
 -   id: 20
     slug: responzivni-patalie
-    title: Responzivní patálie v Brně
+    title: Responzivní patálie v&nbsp;Brně
     description: >
-        <strong>Devatenáctý brněnský sraz</strong>: čtvrtek 23. 6. 2016, Kiwi.com Brno
+        <strong>Devatenáctý brněnský sraz</strong>: čtvrtek 23.&nbsp;6.&nbsp;2016, Kiwi.com Brno
     speakers:
         -   name: Karel Škopek
             image: karel-skopek.jpg
@@ -720,31 +720,31 @@
             title: Debugování responzivních webů
             youtube_id: BuzsK54e5EQ
     more_links:
-            -   title: Všechny přednášky v playlistu
+            -   title: Všechny přednášky v&nbsp;playlistu
                 url: https://www.youtube.com/playlist?list=PLnXfazh66kVdYR8zV9qxh7XpmBciO2yW7
 -   id: 21
     slug: rizeni-projektu-pro-tymy-i-jednotlivce
-    title: Řízení projektů pro týmy i jednotlivce
+    title: Řízení projektů pro týmy i&nbsp;jednotlivce
     description: >
-        <strong>Dvacátý pražský sraz</strong>: čtvrtek 15. 9. 2016, Paralelní Polis Praha
+        <strong>Dvacátý pražský sraz</strong>: čtvrtek 15.&nbsp;9. 2016, Paralelní Polis Praha
     speakers:
         -   name: Jiří Knesl
             name_link: https://twitter.com/jiriknesl
             image: jiri-knesl.jpg
-            company: Business & IT konzultant
+            company: Business &&nbsp;IT konzultant
             title: Jak uřídit projekt
             youtube_id: RBLJTKbuEWI
         -   name: Marek Cerman
             image: marek-cerman.jpg
             company: LMC
-            title: 5 let s agile
+            title: 5&nbsp;let s&nbsp;agile
             youtube_id: KXlqMUalIfY
         -   name: Dalibor Pulkert
             name_link: https://twitter.com/daliborpulkert
             image: dalibor-pulkert.png
             company: Etnetera
-            title: Dekompozice jako cesta k efektivitě
+            title: Dekompozice jako cesta k&nbsp;efektivitě
             youtube_id: yy6iUVBg5bQ
     more_links:
-            -   title: Všechny přednášky v playlistu
+            -   title: Všechny přednášky v&nbsp;playlistu
                 url: https://www.youtube.com/playlist?list=PLnXfazh66kVd87yBmupLBNMlABN0BL-tz

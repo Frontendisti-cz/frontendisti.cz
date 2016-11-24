@@ -62,10 +62,10 @@
                                             target="_blank"
                                             class="typography-link-unstyled"
                                         >
-                                            @&nbsp;{{ speaker.company|striptags|trim }}
+                                            {{ speaker.company|raw }}
                                         </a>
                                     {% else %}
-                                        @&nbsp;{{ speaker.company|striptags|trim }}
+                                        {{ speaker.company|raw }}
                                     {% endif %}
                                 {% endif %}
                             </h3>
@@ -104,7 +104,7 @@
                     <ul class="list typography-text-small offset-bottom--large">
                         {% for link in event.more_links %}
                             <li>
-                                <a href="{{ link.url|striptags|trim }}" target="_blank">{{ link.title }}</a>
+                                <a href="{{ link.url|striptags|trim }}" target="_blank">{{ link.title|raw }}</a>
                             </li>
                         {% endfor %}
                     </ul>
