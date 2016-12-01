@@ -3,7 +3,11 @@
 /bower_components
 /node_modules
 
+/var
+
 /web/css/*
 /web/images/*
 /web/image_cache/*
 /web/media/*
+
+!.gitkeep
