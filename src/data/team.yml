@@ -1,14 +1,67 @@
 -   id: 1
     name: Martin Michálek
     image: martin-michalek.jpg
-    position: >
-        vedení, komunikace, sponzoři
+    position: vedení, komunikace, sponzoři
     email: martin@vzhurudolu.cz
     twitter: machal
 -   id: 2
     name: Tomáš Hejč
     image: tomas-hejc.jpg
-    position: >
-        organizace brněnských akcí
+    position: organizace brněnských akcí
     email: tomas.hejc@superkoderi.cz
     twitter: TaCcz
+-   id: 3
+    name: Michal Matuška
+    image: michal-matuska.jpg
+    position: organizace brněnských akcí
+    email: michal.matuska@superkoderi.cz
+    twitter: fireball_
+-   id: 4
+    name: Adam Kudrna
+    image: adam-kudrna.jpg
+    position: organizace pražských akcí
+    email: adam@adamkudrna.cz
+    twitter: adamkudrna
+-   id: 5
+    name: Michal Voják
+    image: michal-vojak.jpg
+    position: organizace pražských akcí
+    email: michal@aw-dev.cz
+    twitter: michalvojak
+-   id: 6
+    name: Pavel Ševčík
+    image: pavel-sevcik.jpg
+    position: organizace pražských akcí
+-   id: 7
+    name: Lukáš Werner
+    image: ~
+    position: organizace pražských akcí
+    email: sherpa.psx@gmail.com
+-   id: 8
+    name: Tomáš Musiol
+    image: tomas-musiol.jpg
+    position: organizace ostravských akcí
+    email: tomas.musiol@gmail.com
+    twitter: kozleek
+-   id: 9
+    name: Patrik Illy
+    image: patric-illy.jpg
+    position: organizace ostravských akcí
+    email: patrik.illy@gmail.com
+    twitter: illycz
+-   id: 10
+    name: Eduard Štůla
+    image: ~
+    position: organizace plzeňských akcí
+-   id: 11
+    name: Robin Pokorný
+    image: robin-pokorny.jpg
+    position: spoluzakladatel
+    email: me@robinpokorny.com
+    twitter: robinpokorny
+-   id: 12
+    name: Jan Forejt
+    image: ~
+    position: videa z akcí
+    email: janforejt@gmail.com
+    twitter: janforejt
