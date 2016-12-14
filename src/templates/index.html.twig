@@ -160,19 +160,29 @@
                 <div class="row center-xs offset-bottom--large">
                     {% for member in data.team %}
                         <div class="col-xs-6 col-sm-4 col-md-3">
-
-                            <img
-                                src="{{ image('media/people/' ~ member.image).zoomCrop(150, 150) }}"
-                                srcset="
-                                    {{ image('media/people/' ~ member.image).zoomCrop(150, 150) }},
-                                    {{ image('media/people/' ~ member.image).zoomCrop(300, 300) }} 2x
-                                "
-                                width="150"
-                                height="150"
-                                class="typography-image-responsive typography-image-responsive--center
-                                    typography-image-circle"
-                                alt="{{ member.name }}"
-                            />
+                            {% if member.image is defined %}
+                                <img
+                                    src="{{ image('media/people/' ~ member.image).zoomCrop(150, 150) }}"
+                                    srcset="
+                                        {{ image('media/people/' ~ member.image).zoomCrop(150, 150) }},
+                                        {{ image('media/people/' ~ member.image).zoomCrop(300, 300) }} 2x
+                                    "
+                                    width="150"
+                                    height="150"
+                                    class="typography-image-responsive typography-image-responsive--center
+                                        typography-image-circle"
+                                    alt="{{ member.name }}"
+                                />
+                            {% else %}
+                                <img
+                                    src="{{ asset('media/people/avatar.svg') }}"
+                                    width="150"
+                                    height="150"
+                                    class="typography-image-responsive typography-image-responsive--center
+                                            typography-image-circle"
+                                    alt="{{ member.name }}"
+                                />
+                            {% endif %}
                             <h3>{{ member.name|striptags|trim }}</h3>
                             <ul class="list list--clip typography-text-small">
                                 {% if member.position|length > 0 %}
@@ -188,7 +198,7 @@
                                     </li>
                                 {% endif %}
                                 {% if member.twitter|length > 0 %}
-                                    <li class="list__item">
+                                    <li class="list__item offset-bottom--large">
                                         <a
                                             href="https://twitter.com/{{ member.twitter|striptags|trim }}"
                                             target="_blank"
