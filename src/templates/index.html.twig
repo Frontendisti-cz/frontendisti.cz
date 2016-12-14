@@ -160,7 +160,7 @@
                 <div class="row center-xs offset-bottom--large">
                     {% for member in data.team %}
                         <div class="col-xs-6 col-sm-4 col-md-3">
-                            {% if member.image is defined %}
+                            {% if member.image %}
                                 <img
                                     src="{{ image('media/people/' ~ member.image).zoomCrop(150, 150) }}"
                                     srcset="
