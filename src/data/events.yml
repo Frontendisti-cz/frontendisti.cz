@@ -72,6 +72,7 @@
              url: https://www.youtube.com/playlist?list=PLnXfazh66kVfrUeChLakQwaXiXvoK15B7
 #         -   title: Moderovaná diskuze na téma CSS preprocesory
 #             url: https://www.youtube.com/watch?v=yywYWab89NE
+
 -   id: 2
     slug: newslettery
     title: Kódování newsletterů
@@ -104,6 +105,7 @@
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcXGTWV1Fx2K-5i53nktdLw<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-26-3-2014-brno-k-dov-n
+
 -   id: 3
     slug: organizace
     title: Organizace kódu
@@ -136,6 +138,7 @@
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVejEaZgbjV0nkmJ_gS3V7A1<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-organizace-kodu
+
 -   id: 4
     slug: ux
     title: UX
@@ -172,6 +175,7 @@
          -   title: Heuréka Devs
              url: https://twitter.com/HeurekaDevs
              image: logoheurekaclaimrgb-250x75.png
+
 -   id: 5
     slug: frameworky
     title: Front-end frameworky v&nbsp;Brně
@@ -211,31 +215,32 @@
          -   title: Heuréka Devs
              url: https://twitter.com/HeurekaDevs
              image: logoheurekaclaimrgb-250x75.png
+
 -   id: 6
     slug: rwd-media
     title: Responzivní média v&nbsp;Ostravě
     description: >
         Pátek 26.&nbsp;9. 2014, Viva Ostrava
     speakers:
-    -   name: Robin Pokorný
-        name_link: https://twitter.com/robinpokorny
-        image: robin-pokorny.jpg
-        company: LMC, s.r.o.
-        title: Picture element
-        youtube_id: 3yzl4XG1524
-        presentation: http://www.slideshare.net/robinpokorny/picture-element-v-ostrav
-    -   name: Martin Michálek
-        name_link: https://twitter.com/machal
-        image: martin-michalek.jpg
-        company: Freelancer
-        title: Responzivní obrázky v&nbsp;praxi
-        youtube_id: zsE6caTsi1M
-        presentation: http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic/
-    -   image: jakub-mikulas.jpg
-        name: <a href="https://twitter.com/jedenbod">Jakub Mikuláš</a>
-        company: Freelancer
-        title: Video
-        youtube_id: LLmbOVOLGQA
+        -   name: Robin Pokorný
+            name_link: https://twitter.com/robinpokorny
+            image: robin-pokorny.jpg
+            company: LMC, s.r.o.
+            title: Picture element
+            youtube_id: 3yzl4XG1524
+            presentation: http://www.slideshare.net/robinpokorny/picture-element-v-ostrav
+        -   name: Martin Michálek
+            name_link: https://twitter.com/machal
+            image: martin-michalek.jpg
+            company: Freelancer
+            title: Responzivní obrázky v&nbsp;praxi
+            youtube_id: zsE6caTsi1M
+            presentation: http://www.slideshare.net/machal/frontendisti-rwd-obrazkypublic/
+        -   image: jakub-mikulas.jpg
+            name: <a href="https://twitter.com/jedenbod">Jakub Mikuláš</a>
+            company: Freelancer
+            title: Video
+            youtube_id: LLmbOVOLGQA
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: http://www.youtube.com/playlist?list=PLnXfazh66kVd_AuG1fVQYWoya4b1NyNeR
@@ -250,6 +255,7 @@
          -   title: Heuréka Devs
              url: https://twitter.com/HeurekaDevs
              image: logoheurekaclaimrgb-250x75.png
+
 -   id: 7
     slug: psd
     title: PSD či nePSD? v&nbsp;Praze
@@ -282,6 +288,7 @@
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcYKCxuTxFZdHLDS6YtefWU
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-31102014-praha-psd-ci-nepsd
+
 -   id: 8
     slug: svg
     title: SVG v&nbsp;Brně
@@ -314,6 +321,7 @@
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVcLpo9sIRiPfBzf1VPIaFo8<br/>
 #        -   title: Zvukový záznam z diskuze
 #            url: https://soundcloud.com/frontendisti/diskuze-prosinec-2014-svg-v-brne
+
 -   id: 9
     slug: automatizace
     title: Automatizace v&nbsp;Ostravě
@@ -345,33 +353,34 @@
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfswYfcSqw3oWAzrtMEIM21
 #        -   title: Zvukový záznam z diskuze (25:25 ~ 6.76MB)
 #            url: http://www.frontendisti.cz/?podcast_episode=/uploads/2015/02/Frontendisti.cz_.Diskuze.008-Automatizace.mp3
+
 -   id: 10
     slug: wp
     title: WordPress v&nbsp;Praze
     description: >
         Čtvrtek 13.&nbsp;3. 2015, Node&nbsp;5 Praha
     speakers:
-    -   name: Jan Bien
-        name_link: https://twitter.com/HonzaBien
-        image: jan-bien.jpg
-        company: Webmistři
-        title: Není WordPress jako WordPress
-        youtube_id: AXPMXizrKAc
-        presentation: https://docs.google.com/presentation/d/1Z8ooB5BtKC11WAGeGh4SNkgfebhHH-zRLaWORAGlm2g/edit#slide=id.p4
-    -   name: Tomáš Hejč
-        name_link: https://twitter.com/taccz
-        image: tomas-hejc.jpg
-        company: SuperKoderi.cz
-        title: Rizika použití WordPressu
-        youtube_id: ihSUNZ3-ov4
-        presentation: http://www.slideshare.net/SuperKoderi/frontendisti-wp
-    -   name: Borek Bernard
-        name_link: https://twitter.com/borekb
-        image: borek-bernard.jpg
-        company: VersionPress
-        title: WordPress jako byznys příležitost
-        youtube_id: U7x4zz12c7U
-        presentation: http://www.slideshare.net/borekb/wordpress-jako-pleitost-frontendisti-minikonf-032015
+        -   name: Jan Bien
+            name_link: https://twitter.com/HonzaBien
+            image: jan-bien.jpg
+            company: Webmistři
+            title: Není WordPress jako WordPress
+            youtube_id: AXPMXizrKAc
+            presentation: https://docs.google.com/presentation/d/1Z8ooB5BtKC11WAGeGh4SNkgfebhHH-zRLaWORAGlm2g/edit#slide=id.p4
+        -   name: Tomáš Hejč
+            name_link: https://twitter.com/taccz
+            image: tomas-hejc.jpg
+            company: SuperKoderi.cz
+            title: Rizika použití WordPressu
+            youtube_id: ihSUNZ3-ov4
+            presentation: http://www.slideshare.net/SuperKoderi/frontendisti-wp
+        -   name: Borek Bernard
+            name_link: https://twitter.com/borekb
+            image: borek-bernard.jpg
+            company: VersionPress
+            title: WordPress jako byznys příležitost
+            youtube_id: U7x4zz12c7U
+            presentation: http://www.slideshare.net/borekb/wordpress-jako-pleitost-frontendisti-minikonf-032015
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVfjzdmYDKOFf3QyQRTR32-u
@@ -380,6 +389,7 @@
          -   title: Český hosting
              url: http://www.cesky-hosting.cz/
              image: logo-cesky-hosting-250x188.png
+
 -   id: 11
     slug: typografie
     title: Typografie v&nbsp;Brně
@@ -415,31 +425,32 @@
          -   title: Webnode
              url: http://www.webnode.com/jobs/
              image: webnode-logo-250x80.png
+
 -   id: 12
     slug: rychlost
     title: Rychlost načítání webů
     description: >
         Středa 3.&nbsp;6. 2015, Node&nbsp;5 Praha
     speakers:
-    -   name: Jan Sládek
-        name_link: https://twitter.com/honzasladek
-        image: jan-sladek.jpg
-        company: ManGoWeb
-        title: Na rychlosti záleží?
-        youtube_id: qsHWH2VLvfw
-        presentation: https://speakerdeck.com/mangoweb/na-rychosti-zalezi-frontendisti-3-6-2015
-    -   name: Tomáš Krejčí
-        name_link: https://twitter.com/tomkrej
-        image: tomas-krejci.jpg
-        company: SuperKoderi.cz
-        title: Jak zrychlit načítání webu
-        youtube_id: xz6ao2pOSi0
-    -   name: Martin Michálek
-        name_link: https://twitter.com/machal
-        image: martin-michalek.jpg
-        company: Freelancer
-        title: Critical CSS
-        youtube_id: 6x3pSAP-LTo
+        -   name: Jan Sládek
+            name_link: https://twitter.com/honzasladek
+            image: jan-sladek.jpg
+            company: ManGoWeb
+            title: Na rychlosti záleží?
+            youtube_id: qsHWH2VLvfw
+            presentation: https://speakerdeck.com/mangoweb/na-rychosti-zalezi-frontendisti-3-6-2015
+        -   name: Tomáš Krejčí
+            name_link: https://twitter.com/tomkrej
+            image: tomas-krejci.jpg
+            company: SuperKoderi.cz
+            title: Jak zrychlit načítání webu
+            youtube_id: xz6ao2pOSi0
+        -   name: Martin Michálek
+            name_link: https://twitter.com/machal
+            image: martin-michalek.jpg
+            company: Freelancer
+            title: Critical CSS
+            youtube_id: 6x3pSAP-LTo
     more_links:
         -   title: Blogpost o&nbsp;Critical CSS
             url: http://www.vzhurudolu.cz/blog/35-critical-css
@@ -456,6 +467,7 @@
         -   title: Jobs.cz
             url: http://www.jobs.cz/frontendista
             image: logo-jobs.png
+
 -   id: 13
     slug: semantika
     title: Sémantika v&nbsp;Brně
@@ -494,6 +506,7 @@
         -   title: CDN77
             url: https://www.cdn77.jobs/
             image: cdn77-jobs_dark-250x65.png
+
 -   id: 14
     slug: prototypovani
     title: Prototypování
@@ -520,6 +533,7 @@
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVeB2wEFmY_WVcnS59_PUzpd
+
 -   id: 15
     slug: reactjs
     title: React.js
@@ -554,6 +568,7 @@
         -   title: Český hosting
             url: http://www.cesky-hosting.cz/
             image: logo-cesky-hosting-250x188.png
+
 -   id: 16
     slug: budoucnost-css
     title: Budoucnost CSS
@@ -589,6 +604,7 @@
         -   title: Webnode
             url: http://www.webnode.com/jobs/
             image: webnode-logo-250x80.png
+
 -   id: 17
     slug: style-guides
     title: Style Guides
@@ -621,6 +637,7 @@
         -   title: Český hosting
             url: http://www.cesky-hosting.cz/
             image: logo-cesky-hosting-250x188.png
+
 -   id: 18
     slug: kvalita-kodu
     title: Kvalita kódu
@@ -656,6 +673,7 @@
         -   title: LMC
             url: http://www.lmc.eu/
             image: LMC_small_logo_RGB_100-250x97.png
+
 -   id: 19
     slug: marketing
     title: Marketing
@@ -698,6 +716,7 @@
         -   title: LMC
             url: http://www.lmc.eu/
             image: LMC_small_logo_RGB_100-250x97.png
+
 -   id: 20
     slug: responzivni-patalie
     title: Responzivní patálie v&nbsp;Brně
@@ -720,8 +739,9 @@
             title: Debugování responzivních webů
             youtube_id: BuzsK54e5EQ
     more_links:
-            -   title: Všechny přednášky v&nbsp;playlistu
-                url: https://www.youtube.com/playlist?list=PLnXfazh66kVdYR8zV9qxh7XpmBciO2yW7
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVdYR8zV9qxh7XpmBciO2yW7
+
 -   id: 21
     slug: rizeni-projektu-pro-tymy-i-jednotlivce
     title: Řízení projektů pro týmy i&nbsp;jednotlivce
@@ -746,8 +766,8 @@
             title: Dekompozice jako cesta k&nbsp;efektivitě
             youtube_id: yy6iUVBg5bQ
     more_links:
-            -   title: Všechny přednášky v&nbsp;playlistu
-                url: https://www.youtube.com/playlist?list=PLnXfazh66kVd87yBmupLBNMlABN0BL-tz
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVd87yBmupLBNMlABN0BL-tz
 
 -   id: 22
     slug: performance-v-prohlizeci
@@ -767,8 +787,8 @@
             title: "Optimalizace JavaScriptového kódu: mýty &amp;&nbsp;praxe."
             youtube_id: ijayRkP1mc8
     more_links:
-            -   title: Všechny přednášky v&nbsp;playlistu
-                url: https://www.youtube.com/playlist?list=PLnXfazh66kVd9gbG3uxGEMmibW1R3da7d
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVd9gbG3uxGEMmibW1R3da7d
 
 -   id: 23
     slug: frontendisti-v-plzni
