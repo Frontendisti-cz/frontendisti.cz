@@ -7,6 +7,9 @@ Official web site of Czech front-end community.
 
 ## Contributing
 
+This site is built on [TwigYard](https://github.com/twigyard/twigyard), a PHP library to host multiple websites
+written in the Twig templating language.
+
 1. Clone this repository.
 2. Create a feature branch and make changes to be published. Write up a comprehensible summary of your changes in
    commit message (in English, please!). Structure your work into more commits whenever appropriate.
