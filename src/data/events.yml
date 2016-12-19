@@ -798,19 +798,19 @@
     speakers:
         -   name: Jirka Vyhnálek
             name_link: ~
-            image: ~
+            image: jiri-vyhnalek.jpg
             company: Socialbakers
             title: Vývoj SPA v&nbsp;React +&nbsp;Redux
             youtube_id: TBI6YXuAHeI
         -   name: Martin Hložek
             name_link: https://twitter.com/hloza
-            image: ~
+            image: martin-hlozek.jpg
             company: Beneš &&nbsp;Michl
             title: Bootstrap – naše cesta tam a&nbsp;zase zpátky
             youtube_id: wGeBa-rRHcI
         -   name: Vašek Vracovský
             name_link: ~
-            image: ~
+            image: vaclav-vracovsky.jpg
             company: Shoptet
             title: ShoptetLeaks
             youtube_id: ZXA0dhM34sU
@@ -826,19 +826,19 @@
     speakers:
         -   name: Michal Maňák
             name_link: ~
-            image: ~
+            image: michal-manak.jpg
             company: AW-dev
             title: Tvorba produktu je týmový sport
             youtube_id: e7BKN5TUhqc
         -   name: František Procházka
             name_link: ~
-            image: ~
+            image: frantisek-prochazka.jpg
             company: Bistro
             title: Úloha kreativního kodéra v&nbsp;rámci přípravy microsite
             youtube_id: 3es884UouiE
         -   name: Martin Michálek
             name_link: https://twitter.com/machal
-            image: ~ #martin-michalek.jpg
+            image: martin-michalek.jpg
             company: Freelance
             title: Slasti i&nbsp;pasti HTML prototypování
             youtube_id: hVI4mp8xZLk
