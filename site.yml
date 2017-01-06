@@ -16,6 +16,9 @@ data:
 tracking:
     google_analytics: UA-51816675-1
 
+redirect:
+    /predchozi-akce: /archiv-akci
+
 renderer:
     index: index.html.twig
     archive: archive.html.twig
