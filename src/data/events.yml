@@ -845,3 +845,25 @@
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVeyU1wsp5fWh6GvD1m8vxmr
+
+-   id: 25
+    slug: react-a-css-v-js
+    title: React a CSS v JS
+    description: >
+        Středa 8.&nbsp;3. 2017, Ataccama Praha
+    speakers:
+        -   name: Iakov Markov
+            name_link: https://twitter.com/IakovMarkov
+            image: ~
+            company: Ataccama
+            title: React bez závislosti na Reactu
+            youtube_id: NZdyFDsBdB8
+        -   name: Daniel Steigerwald
+            name_link: https://twitter.com/steida
+            image: ~
+            company: Freelance
+            title: CSS in JS
+            youtube_id: pQe_Kp-yFJk
+    more_links:
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVe7CaC6Me3cV8nXtX9Q6PL9
