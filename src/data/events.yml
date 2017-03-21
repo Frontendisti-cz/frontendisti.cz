@@ -867,3 +867,8 @@
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/playlist?list=PLnXfazh66kVe7CaC6Me3cV8nXtX9Q6PL9
+    partners_title: Partner srazu:
+    partners:
+        -   title: Ataccama
+            url: https://www.ataccama.com/
+            image: ataccama_logo1.png
