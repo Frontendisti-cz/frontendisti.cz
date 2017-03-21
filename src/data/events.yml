@@ -854,13 +854,13 @@
     speakers:
         -   name: Iakov Markov
             name_link: https://twitter.com/IakovMarkov
-            image: ~
+            image: iakov-markov.jpg
             company: Ataccama
             title: React bez závislosti na Reactu
             youtube_id: NZdyFDsBdB8
         -   name: Daniel Steigerwald
             name_link: https://twitter.com/steida
-            image: ~
+            image: daniel-steigerwald.jpg
             company: Freelance
             title: CSS in JS
             youtube_id: pQe_Kp-yFJk
