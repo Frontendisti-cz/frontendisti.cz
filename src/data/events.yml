@@ -872,3 +872,86 @@
         -   title: Ataccama
             url: https://www.ataccama.com/
             image: ataccama_logo1.png
+
+-   id: 26
+    slug: frontend-v-brnenskych-firmach-lightning-talks
+    title: Frontend v&nbsp;brněnských firmách +&nbsp;„lightning talks“
+    description: >
+        Čtvrtek 6.&nbsp;4. 2017, Kiwi.com Brno
+    speakers:
+        -   name: Martin Kolář
+            company: igloonet
+            company_link: https://igloonet.cz/
+            title: Web v přechodu
+            youtube_id: wBsa_Chlj_Q
+        -   name: Igor Hlina
+            name_link: https://twitter.com/srigi
+            title: CSS in JS
+            youtube_id: dKAQWrkedag
+        -   name: Vasil Dimitrov
+            name_link: https://twitter.com/vydimitrov
+            title: Consistency in breakpoint declarations between CSS and JavaScript [EN]
+            youtube_id: gZ5EwOswfjM
+        -   name: Pavel Doleček
+            name_link: https://twitter.com/Straaajk
+            company: Kiwi.com
+            company_link: https://www.kiwi.com
+            title: Jak si ulehčujeme code review v Kiwi.com
+            youtube_id: UqvHty9ZSeo
+        -   name: Denis Kabaňa
+            company: ROI Hunter
+            company_link: http://www.roihunter.com/
+            title: Do you need a styleguide?
+            youtube_id: RERtiIHQPhg
+        -   name: Petr Goca
+            company: INSPIRE CZ s.r.o
+            company_link: https://www.inspire.cz
+            title: Tvorba ziskových časových odhadů šablon
+            youtube_id: zSvcqK0aggc
+        -   name: Petr Grochál
+            name_link: https://twitter.com/Straaajk
+            company: Superkodéři
+            company_link: http://www.superkoderi.cz/
+            title: Google maps API - pokročilejší plánování tras
+            youtube_id: JPLrsCnTlgY
+        -   name: Jirka Tvrdek
+            name_link: https://twitter.com/tvrdek
+            title: Nevyřešené problémy mezi designem a front-endem
+            youtube_id: izHwyusktx0
+    more_links:
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVd54oggd_5zcBGzJwKcaJQq
+
+-   id: 27
+    slug: english-meetup-in-msd
+    title: English meetup in MSD
+    description: >
+        Středa 10.&nbsp;5. 2017, MSD IT Global Innovation Center Praha
+    speakers:
+        -   name: Jakub Rafaj
+            name_link: https://twitter.com/jakub_rafaj
+            company: MSD IT Global Innovation Center
+            company_link: https://www.msdit.cz/
+            title: Where to start (and stop) with measuring user-journeys
+            youtube_id: ToFn2aFCiMw
+        -   name: Robin Pokorný
+            name_link: https://twitter.com/robinpokorny
+            company: NewStore
+            company_link: https://www.newstore.com/
+            title:  15 months of Accelerated Mobile Pages
+            youtube_id: 74eg0wgSIuQ
+        -   name: Honza Sládek
+            name_link: https://twitter.com/honzasladek
+            company: manGoweb
+            company_link: https://www.mangoweb.cz/
+            title: Developing interfaces and how to work with designers and product managers
+            youtube_id: _iWXvPwb2Xo
+    more_links:
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVc87koCnmEjMy5tF6LfMtqu
+
+-   id: 28
+    slug: bem-konecne-spravne-vyhody-a-nevyhody
+    title: BEM konečně správně &ndash; výhody a&nbsp;nevýhody
+    description: >
+        Středa 17.&nbsp;5. 2017, MORAVIO s.r.o. Ostrava
