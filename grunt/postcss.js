@@ -7,17 +7,16 @@ module.exports = {
       require('pixrem')(),
       require('autoprefixer')({
         browsers: [
-          'Android 2.3',
-          'Android >= 4',
-          'Chrome >= 20',
-          'Firefox ESR',
-          'Explorer >= 8',
-          'iOS >= 6',
-          'Opera >= 12',
-          'Safari >= 6',
+          '> 1%',
+          'last 2 versions',
+          'ie 11',
         ],
       }),
-      require('cssnano')(),
+      require('cssnano')({
+        autoprefixer: false,
+        mergeRules: false,
+        zindex: false,
+      }),
     ],
   },
   dist: {

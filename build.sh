@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-npm install
-bower install
+npm install &&\
+bower install &&\
 grunt

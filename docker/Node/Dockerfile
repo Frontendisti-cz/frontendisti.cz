@@ -1,6 +1,6 @@
 FROM            fedora:latest
 
-RUN             curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
+RUN             curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
 RUN             dnf install -y git nodejs
 RUN             mkdir /home/docker-container-user
 RUN             mkdir /workspace
