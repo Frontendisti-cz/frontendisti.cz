@@ -955,3 +955,34 @@
     title: BEM konečně správně &ndash; výhody a&nbsp;nevýhody
     description: >
         Středa 17.&nbsp;5. 2017, MORAVIO s.r.o. Ostrava
+
+-   id: 29
+    slug: webexpo-photopea-a-microsoft-edge
+    title: WebExpo, Photopea a&nbsp;Microsoft Edge
+    description: >
+        Středa 11.&nbsp;10. 2017, LMC s.r.o. Praha
+    speakers:
+        -   name: Honza Mikulášek
+            name_link: https://twitter.com/JxMik
+            company: 2FRESH
+            company_link: http://www.2fresh.cz
+            title: Web WebExpo
+            youtube_id: qE2QWIxWUv8
+            image: honza-mikulasek.jpg
+        -   name: Ivan Kuckir
+            name_link: ~
+            company: ~
+            company_link: ~
+            title: "Photopea: vývoj grafického editoru"
+            youtube_id: i55_rk0cmqo
+            image: ivan-kuckir.jpg
+        -   name: Václav Dajbych
+            name_link: https://twitter.com/Dajbych
+            company: Microsoft
+            company_link: https://www.microsoft.com/cs-cz
+            title: Microsoft Edge –&nbsp;minulost a&nbsp;budoucnost
+            youtube_id: xvTP6cS1uS0
+            image: vaclav-dajbych.jpg
+    more_links:
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/watch?v=qE2QWIxWUv8&list=PLnXfazh66kVddq-0dEYgvD7JD-EIklEAF
