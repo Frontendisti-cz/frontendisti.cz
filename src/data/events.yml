@@ -986,3 +986,37 @@
     more_links:
         -   title: Všechny přednášky v&nbsp;playlistu
             url: https://www.youtube.com/watch?v=qE2QWIxWUv8&list=PLnXfazh66kVddq-0dEYgvD7JD-EIklEAF
+
+-   id: 30
+    slug: chrome-dev-tools-metriky-rychlosti-nacitani-jamstack
+    title: Chrome DevTools, metriky rychlosti načítání a&nbsp;JAMstack
+    description: >
+        Středa 14.&nbsp;3. 2018, Ataccama office Praha
+    speakers:
+        -   name: Iakov Markov
+            name_link: https://twitter.com/IakovMarkov
+            company: Ataccama
+            company_link: https://www.ataccama.com/
+            title: Chrome&nbsp;DevTools, základní i&nbsp;pokročilé měření výkonu
+            youtube_id: 8DCQAJWwhFE
+            presentation: https://docs.google.com/presentation/d/1b_V9H5vMOb2SkXh4Ev53hEADMlkM6FUL7HQriVtpbXI/edit#slide=id.p
+            image: iakov-markov.jpg
+        -   name: Martin Michálek
+            name_link: https://twitter.com/machal
+            company: Freelancer
+            company_link: ~
+            title: Metriky rychlosti načítání a&nbsp;tipy pro WebpageTest.org
+            youtube_id: fR9n_yi050g
+            presentation: https://www.slideshare.net/machal/metriky-rychlosti-natn
+            image: martin-michalek.jpg
+        -   name: Láďa Prskavec
+            name_link: https://twitter.com/abtris
+            company: Apiary
+            company_link: https://apiary.io/
+            title: JAMstack, moderní architektura pro stavbu webů
+            youtube_id: AmdSoR-x7bE
+            presentation: https://www.slideshare.net/ladislavprskavec/how-you-can-kill-wordpress
+            image: lada-prskavec.jpg
+    more_links:
+        -   title: Všechny přednášky v&nbsp;playlistu
+            url: https://www.youtube.com/playlist?list=PLnXfazh66kVdd4tf0AqlfW4-VVXOHlj5N
