@@ -8,6 +8,9 @@
 /web/css/*
 /web/images/*
 /web/image_cache/*
+/web/js/*
+!/web/js/external
+/web/js/external/*
 /web/media/*
 
 !.gitkeep

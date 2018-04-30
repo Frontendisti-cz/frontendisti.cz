@@ -14,7 +14,7 @@ data:
     team: team.yml
 
 tracking:
-    google_analytics: UA-51816675-1
+    google_analytics: js/external/google-analytics.js
 
 redirect:
     /predchozi-akce: /archiv-akci
@@ -22,3 +22,25 @@ redirect:
 renderer:
     index: index.html.twig
     archive: archive.html.twig
+
+header:
+    'Content-Security-Policy':
+        'default-src':
+            - "'self'"
+        'font-src':
+            - "'self'"
+            - "*.gstatic.com"
+        'frame-src':
+            - "'self'"
+            - "www.youtube.com"
+        'img-src':
+            - "'self'"
+            - "www.google-analytics.com"
+        'script-src':
+            - "'self'"
+            - "*.googleapis.com"
+            - "www.google-analytics.com"
+        'style-src':
+            - "'self'"
+            - "'unsafe-inline'"
+            - "*.googleapis.com"
