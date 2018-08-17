@@ -24,23 +24,4 @@ renderer:
     archive: archive.html.twig
 
 header:
-    'Content-Security-Policy':
-        'default-src':
-            - "'self'"
-        'font-src':
-            - "'self'"
-            - "*.gstatic.com"
-        'frame-src':
-            - "'self'"
-            - "www.youtube.com"
-        'img-src':
-            - "'self'"
-            - "www.google-analytics.com"
-        'script-src':
-            - "'self'"
-            - "*.googleapis.com"
-            - "www.google-analytics.com"
-        'style-src':
-            - "'self'"
-            - "'unsafe-inline'"
-            - "*.googleapis.com"
+    'Content-Security-Policy': ~
