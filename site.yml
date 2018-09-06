@@ -1,6 +1,7 @@
 url:
     canonical: frontendisti.cz
     extra: [www.frontendisti.cz]
+    ssl: true
 
 locale: cs_CZ
 
